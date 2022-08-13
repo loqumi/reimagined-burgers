@@ -1,0 +1,39 @@
+.section__about {
+    background: url("../../images/bg/bgwe.png") center center / cover no-repeat;
+    color: var(--title);
+}
+
+.cards__item-icon{
+    width: 35%;
+    height: 35%;
+}
+
+.about__container {
+    flex-direction: column;
+}
+
+.cards__wrapper {
+    display: flex;
+}
+
+.cards__item {
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    width: 20vw;
+    color: var(--text-gray);
+}
+
+.card__item-text {
+    text-align: center;
+    color: gray;
+    font-weight: 300;
+}
+
+h3.section__subtitle {
+    font-size: 25px;
+    width: 70%;
+    text-align: center;
+}

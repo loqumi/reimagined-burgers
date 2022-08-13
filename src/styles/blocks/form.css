@@ -1,0 +1,50 @@
+.section__order {
+    background: url("../../images/bg/form.png") center center / cover no-repeat;
+}
+
+.container__order {
+    flex-direction: column;
+}
+
+.order__form {
+    display: flex;
+}
+
+.order__form > * {
+    flex: 1;
+}
+
+.wrapper {
+    width: 100%;
+}
+
+.form__row {
+    display: flex;
+    margin-bottom: 12px;
+}
+
+.form__row__buttons {
+    display: flex;
+    margin-bottom: 3px;
+}
+textarea.input {
+    height: 9.1vh;
+    width: 28vw;
+}
+
+.input__wrapper--radio,
+.input__wrapper--checkbox {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 10px;
+}
+
+.buttom__format {
+    width: 16px;
+    height: 16px;
+}
+
+.textformat{
+    padding-left: 20px;
+    vertical-align: middle;
+}

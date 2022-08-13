@@ -1,0 +1,22 @@
+.section__preview {
+    background: url("../../images/bg/bg.png") center center / cover no-repeat;
+}
+.section__preview .section__title {
+    color: var(--title);
+}
+
+.preview__image {
+    position: relative;
+    margin-right: 50px;
+}
+.preview__image > *:last-child {
+    position: absolute;
+    left: -40px;
+    top: 40px;
+}
+
+.btn__arrow-down {
+    background: transparent;
+    position: absolute;
+    top: 90vh;
+}

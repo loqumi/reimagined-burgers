@@ -1,0 +1,110 @@
+@import "utils/index.css";
+@import "blocks/index.css";
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+}
+p {
+    font-size: 18px;
+    font-weight: 300;
+}
+body {
+    font-family: Ubuntu, serif;
+    color: var(--white);
+}
+
+.btn {
+    text-transform: uppercase;
+    color: white;
+    padding: 8px;
+    border-radius: 7px;
+}
+
+.btn + .btn {
+    margin-left: 12px;
+}
+
+.btn__warning {
+    background: var(--button);
+}
+
+.btn__transparent {
+    text-transform: capitalize;
+    background: transparent;
+}
+
+.input__wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-right: 24px;
+}
+
+label:first-letter {
+    text-transform: uppercase;
+}
+
+input {
+    margin-top: 6px;
+    padding: 6px;
+    border-radius: 7px;
+    width: 100%;
+    outline:none;
+}
+
+input:focus{
+    border: 2px solid var(--title);
+}
+
+textarea {
+    outline:none;
+    resize: none;
+    border-radius: 8px;
+    padding: 6px;
+    border: 2px transparent solid;
+}
+
+textarea:focus{
+    border: 2px solid var(--title);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section__title {
+    font-family: Gagalin, sans-serif;
+    color: var(--white);
+    font-size: 72px;
+}
+
+h1.section__title {
+    font-family: Gagalin, sans-serif;
+    font-size: 72px;
+    color: var(--title);
+}
+
+.section__subtitle {
+    font-family: Lifehack, sans-serif;
+    font-size: 50px;
+}
+
+h2.section__subtitle {
+    width: 0;
+} 
