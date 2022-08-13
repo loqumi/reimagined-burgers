@@ -1,0 +1,37 @@
+.header {
+    position: absolute;
+    width: 100%;
+}
+.header__container {
+    margin-top: 15px;
+    justify-content: space-between;
+}
+.header__logo{
+    margin-top: 15px;
+    margin-right: 64px;
+}
+.header__list {
+    display: flex;
+}
+
+.list__item {
+    text-transform: uppercase;
+    margin-right: 32px;
+}
+
+.list__item:not(:last-child) {
+    margin-right: 64px;
+    position: relative;
+}
+
+.list__item:not(:last-child)::after {
+    content: '';
+    display: block;
+    width: 6px;
+    height: 6px;
+    background: var(--white);
+    position: absolute;
+    right: -32px;
+    top: 35%;
+    border-radius: 50%;
+}

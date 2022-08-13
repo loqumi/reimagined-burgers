@@ -1,0 +1,25 @@
+.dot_nav{
+    position: fixed;
+    display: flex;
+    right: 3vw;
+    top: 45vh;
+}
+.dot_list{
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    vertical-align: 100%;
+  }
+
+.dot_item{
+    height: 8px;
+    width: 8px;
+    padding: 7px;
+    border-radius: 50%;
+    background: rgb(255, 255, 255) content-box;
+    margin: 10px;
+}
+
+.dot_item:active{
+box-shadow: 0 0 0 1px inset var(--white);
+}
