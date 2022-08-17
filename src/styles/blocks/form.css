@@ -8,6 +8,7 @@
 
 .order__form {
     display: flex;
+    width: 70vw;
 }
 
 .order__form > * {
@@ -20,31 +21,33 @@
 
 .form__row {
     display: flex;
-    margin-bottom: 12px;
+    margin-bottom: 1.78rem;
 }
 
 .form__row__buttons {
     display: flex;
-    margin-bottom: 3px;
+    margin-bottom: 1.78rem;
 }
+
 textarea.input {
-    height: 9.1vh;
-    width: 28vw;
+    height: 6rem;
+    width: 100%;
 }
 
 .input__wrapper--radio,
 .input__wrapper--checkbox {
     display: flex;
     flex-direction: row-reverse;
-    padding: 10px;
+    padding: 0.67rem;
 }
 
 .buttom__format {
-    width: 16px;
-    height: 16px;
+    width: 1.4rem;
+    height: 1.4rem;
+    color: var(--button);
 }
 
 .textformat{
-    padding-left: 20px;
+    padding-left: 1.12rem;
     vertical-align: middle;
 }

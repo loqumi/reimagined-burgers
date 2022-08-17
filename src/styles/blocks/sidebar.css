@@ -2,22 +2,22 @@
     position: fixed;
     display: flex;
     right: 3vw;
-    top: 45vh;
+    top: 40vh;
 }
+
 .dot_list{
     flex-direction: column;
     justify-content: space-between;
-    text-align: center;
     vertical-align: 100%;
-  }
+}
 
 .dot_item{
-    height: 8px;
-    width: 8px;
-    padding: 7px;
+    height: 0.45rem;
+    width: 0.45rem;
+    padding: 0.40rem;
     border-radius: 50%;
     background: rgb(255, 255, 255) content-box;
-    margin: 10px;
+    margin: 0.6rem;
 }
 
 .dot_item:active{
