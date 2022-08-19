@@ -19,6 +19,11 @@
 .footer__img{
     width: 24px;
     height: 24px;
+    opacity: 0.5;
+}
+
+.footer__img:hover{
+    opacity: 1;
 }
 
 .phone__img{

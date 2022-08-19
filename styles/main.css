@@ -56,6 +56,10 @@ body {
     padding-right: 2rem;
 }
 
+label {
+    padding-bottom: 5px;
+}
+
 label:first-letter {
     text-transform: uppercase;
 }
@@ -105,6 +109,8 @@ textarea:focus{
     font-family: Gagalin, sans-serif;
     color: var(--title);
     font-size: 5rem;
+    margin-block-start: 10px;
+    margin-block-end: 30px;
 }
 
 .section__subtitle {
@@ -259,7 +265,6 @@ textarea:focus{
     h2.section__subtitle, 
     .section__title {
         text-align: start;
-        margin: 0 0;
     }
 
     .list__item,
