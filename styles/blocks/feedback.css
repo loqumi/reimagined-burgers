@@ -51,7 +51,7 @@ h5.section__title {
     margin-block-end: 2rem;
 }
 
-.btn__480{
+.btn__mobile_vers{
     display: none;
     margin-right: 2rem;
     background: var(--dark-gray);
