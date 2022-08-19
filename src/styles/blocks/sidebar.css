@@ -24,6 +24,6 @@
     margin: 0.6rem;
 }
 
-.dot_item:active{
+.dot_item:hover{
 box-shadow: 0 0 0 1px inset var(--white);
 }
