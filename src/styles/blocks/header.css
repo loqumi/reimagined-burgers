@@ -1,14 +1,15 @@
 .header {
     position: absolute;
     width: 100%;
+    z-index: 1;
 }
-.header__container {
+.container.header__container {
     margin-top: 15px;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .header__logo{
     margin-top: 15px;
-    margin-right: 64px;
+    margin-right: 50px;
 }
 .header__list {
     display: flex;
@@ -16,11 +17,11 @@
 
 .list__item {
     text-transform: uppercase;
-    margin-right: 32px;
+    margin-right: 20px;
 }
 
 .list__item:not(:last-child) {
-    margin-right: 64px;
+    margin-right: 48px;
     position: relative;
 }
 
@@ -31,7 +32,43 @@
     height: 6px;
     background: var(--white);
     position: absolute;
-    right: -32px;
+    right: -29px;
     top: 35%;
     border-radius: 50%;
+}
+
+.btn-group{
+    display: flex;
+    justify-content: center;
+}
+
+.header__burger{
+    display: none;
+    position: relative;
+    width: 40px;
+    
+}
+
+.header__burger span{
+    position: absolute;
+    background-color: var(--white);
+    width: 22px;
+    height: 2px;
+}
+
+.header__burger::before,
+.header__burger::after{
+    content:'';
+    background-color: var(--white);
+    position: absolute;
+    width: 22px;
+    height: 2px;
+}
+
+.header__burger::before{
+    bottom: 7px;
+}
+
+.header__burger::after{
+    top: 9px;
 }

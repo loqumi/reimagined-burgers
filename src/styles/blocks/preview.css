@@ -1,22 +1,21 @@
 .section__preview {
     background: url("../../images/bg/bg.png") center center / cover no-repeat;
-}
-.section__preview .section__title {
-    color: var(--title);
+    position: relative;
 }
 
 .preview__image {
     position: relative;
-    margin-right: 50px;
+    padding: 12px;
 }
-.preview__image > *:last-child {
-    position: absolute;
-    left: -40px;
-    top: 40px;
+
+.preview__image-burger{
+    width: 100%;
+    height: auto;
+    max-height: 400px;
 }
 
 .btn__arrow-down {
     background: transparent;
     position: absolute;
-    top: 90vh;
+    bottom: 2%;
 }

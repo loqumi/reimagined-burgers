@@ -1,11 +1,16 @@
 .section__about {
     background: url("../../images/bg/bgwe.png") center center / cover no-repeat;
-    color: var(--title);
+    color: var(--verydark-gray)
 }
 
-.cards__item-icon{
-    width: 35%;
-    height: 35%;
+.cards__item-icon {
+    width: 74px;
+    height: 74px;
+    padding: 1.5rem;
+}
+
+.hand {
+    padding-left: 2.4rem;
 }
 
 .about__container {
@@ -17,23 +22,25 @@
 }
 
 .cards__item {
-    font-size: 18px;
+    font-size: 1.29rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 30px;
-    width: 20vw;
+    width:  99%;
     color: var(--text-gray);
+}
+
+.cards__item{
+    padding: 1.5rem 1rem;
 }
 
 .card__item-text {
     text-align: center;
     color: gray;
-    font-weight: 300;
 }
 
 h3.section__subtitle {
-    font-size: 25px;
+    font-size: 1.8rem;
     width: 70%;
     text-align: center;
 }

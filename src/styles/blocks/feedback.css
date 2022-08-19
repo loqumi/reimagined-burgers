@@ -3,8 +3,8 @@
 }
 
 .feedback-card {
-    width: 25%;
-    height: 50%;
+    width: calc(100% / 4);
+    height: calc(100% / 2);
     position: relative;
 }
 
@@ -18,7 +18,7 @@
     justify-content: center;
     align-items: flex-start;
     height: 100%;
-    padding: 0 32px;
+    padding: 0 1.7rem;
     opacity: 0;
     background: rgba(0, 0, 0, .3);
     transition: .4s;
@@ -35,13 +35,26 @@
 }
 
 .btn__secondary {
-    padding-top: 20px;
+    padding-top: 1.1rem;
     background: var(--dark-gray);
     z-index: 0;
 }
+
 .btn__secondary:hover {
     background: var(--verydark-gray);
 }
+
 h5.section__title {
-    font-size: 24px;
+    font-size: 2rem;
+    color: var(--white);
+    margin-block-start: 2rem;
+    margin-block-end: 2rem;
+}
+
+.btn__mobile_vers{
+    display: none;
+    margin-right: 2rem;
+    background: var(--dark-gray);
+    z-index: 0;
+    font-weight: bold;
 }
