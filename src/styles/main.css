@@ -95,7 +95,7 @@ textarea:focus{
 
 .section {
     height: 100vh;
-    min-height: 700px;
+    min-height: 732px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -165,7 +165,7 @@ textarea:focus{
         align-items: center;
     }
 
-    .btn__480, 
+    .btn__mobile_vers, 
     .header__burger {
         display: block;
     }
@@ -189,7 +189,7 @@ textarea:focus{
         font-size: 12px
     }
 
-    .btn__480 {
+    .btn__mobile_vers {
         display: none;
     }
 
