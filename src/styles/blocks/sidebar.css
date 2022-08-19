@@ -1,8 +1,12 @@
 .dot_nav{
-    position: fixed;
     display: flex;
-    right: 3vw;
+}
+
+.sidebar{
+    position: fixed;
     top: 40vh;
+    right: 3vw;
+    z-index: 1;
 }
 
 .dot_list{
@@ -12,8 +16,8 @@
 }
 
 .dot_item{
-    height: 0.45rem;
-    width: 0.45rem;
+    height: 8px;
+    width: 8px;
     padding: 0.40rem;
     border-radius: 50%;
     background: rgb(255, 255, 255) content-box;

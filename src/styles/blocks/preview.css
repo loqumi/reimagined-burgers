@@ -1,19 +1,21 @@
 .section__preview {
     background: url("../../images/bg/bg.png") center center / cover no-repeat;
+    position: relative;
 }
 
 .preview__image {
     position: relative;
-    padding: 2rem;
+    padding: 12px;
 }
 
 .preview__image-burger{
-    width: 25.056rem;
-    height: 23.56rem;
+    width: 100%;
+    height: auto;
+    max-height: 400px;
 }
 
 .btn__arrow-down {
     background: transparent;
     position: absolute;
-    top: 55rem;
+    bottom: 2%;
 }

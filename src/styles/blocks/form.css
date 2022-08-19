@@ -8,7 +8,7 @@
 
 .order__form {
     display: flex;
-    width: 70vw;
+    width: 80%;
 }
 
 .order__form > * {
@@ -21,16 +21,16 @@
 
 .form__row {
     display: flex;
-    margin-bottom: 1.78rem;
+    margin-bottom: 18px;
 }
 
 .form__row__buttons {
     display: flex;
-    margin-bottom: 1.78rem;
+    margin-bottom: 18px;
 }
 
 textarea.input {
-    height: 6rem;
+    height: 80px;
     width: 100%;
 }
 
@@ -38,16 +38,17 @@ textarea.input {
 .input__wrapper--checkbox {
     display: flex;
     flex-direction: row-reverse;
-    padding: 0.67rem;
+    padding: 12px;
 }
 
 .buttom__format {
-    width: 1.4rem;
-    height: 1.4rem;
-    color: var(--button);
+    position: relative;
+    opacity: 1;
+    width: 16px;
+    height: 16px;
 }
 
 .textformat{
-    padding-left: 1.12rem;
+    padding-left: 16px;
     vertical-align: middle;
 }
