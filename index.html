@@ -14,46 +14,50 @@
             <img src="images/icons/logo.svg" alt="logo" class="header__logo">
             <nav class="header__nav">
                 <ul class="list header__list">
-                    <li class="list__item media__display-none-480p"><a href="#about">о нас</a></li>
-                    <li class="list__item media__display-none-480p"><span>бургеры</span></li>
-                    <li class="list__item media__display-none-480p"><span>команда</span></li>
-                    <li class="list__item media__display-none-480p"><span>меню</span></li>
-                    <li class="list__item media__display-none-480p"><a href="#feedback">отзывы</a></li>
-                    <li class="list__item media__display-none-480p"><span>как мы работаем</span></li>
-                    <li class="list__item media__display-none-480p"><a href="#contacts">контакты</a></li>
+                    <li class="list__item"><a href="#about">о нас</a></li>
+                    <li class="list__item"><span>бургеры</span></li>
+                    <li class="list__item"><span>команда</span></li>
+                    <li class="list__item"><span>меню</span></li>
+                    <li class="list__item"><a href="#feedback">отзывы</a></li>
+                    <li class="list__item"><span>как мы работаем</span></li>
+                    <li class="list__item"><a href="#contacts">контакты</a></li>
                 </ul>
             </nav>
-            <button class="btn header__btn btn__warning">
-                <a href="#order">заказать</a>
-                <div class="header__burger">
+            <div class="btn-group">
+                <button class="btn header__btn btn__warning">
+                    <a href="#order">заказать</a>
+                </button>
+
+                <button class="btn header__burger btn__transparent">
                     <span></span>
-                </div>
-            </button>
+                </button>
+            </div>
         </div>
     </header>
+
+    <aside class="sidebar">
+        <nav class="dot_nav">
+            <ul class="list dot_list">
+                <li class="dot_item"></li>
+                <li class="dot_item"></li>
+                <li class="dot_item"></li>
+                <li class="dot_item"></li>
+                <li class="dot_item"></li>
+            </ul>
+        </nav>
+    </aside>
 
     <main class="main">
 
         <section class="section section__preview">
-            <div class="container preview__container media__direction-column-480p">
+            <div class="container preview__container">
                 <div class="preview__image">
                     <img src="images/icons/burger.png" alt="burger" class="preview__image-burger">
                 </div>
                 <div class="preview__description">
-                    <h1 class="section__title media__text-align">мы делаем</h1>
-                    <h2 class="section__subtitle media__text-align">натуральные бургеры</h2>
+                    <h1 class="section__title">мы делаем</h1>
+                    <h2 class="section__subtitle">натуральные бургеры</h2>
                 </div>
-            </div>
-            <div class="sidebar media__display-none-480p">
-                <nav class="dot_nav">
-                    <ul class="list dot_list">
-                        <li class="dot_item"></li>
-                        <li class="dot_item"></li>
-                        <li class="dot_item"></li>
-                        <li class="dot_item"></li>
-                        <li class="dot_item"></li>
-                    </ul>
-                </nav>
             </div>
             <button class="btn btn__arrow-down">
                 <img src="images/icons/arrow-scroll.svg" alt="arrow-scroll" class="arrow-scroll-down">
@@ -62,8 +66,8 @@
 
         <section class="section section__about" id="about">
             <div class="container about__container">
-                <h1 class="section__title media__text-align">мы лучшие</h1>
-                <div class="cards__wrapper media__direction-column-480p">
+                <h1 class="section__title" style="color: var(--dark-gray)">мы лучшие</h1>
+                <div class="cards__wrapper">
                     <div class="cards__item">
                         <img class="cards__item-icon" src="images/icons/meat.svg" alt="meat">
                         <div>
@@ -71,6 +75,7 @@
                             <p class="card__item-text">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб неравномерен.</p>
                         </div>
                     </div>
+
                     <div class="cards__item">
                         <img class="cards__item-icon hand" src="images/icons/hand.svg" alt="meat">
                         <div>
@@ -78,6 +83,7 @@
                             <p class="card__item-text">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Первое полустишие притягивает сюжетный реформаторский пафос.</p>
                         </div>
                     </div>
+
                     <div class="cards__item">
                         <img class="cards__item-icon" src="images/icons/natural.svg" alt="meat">
                         <div>
@@ -92,72 +98,72 @@
         <section class="section section__feedback" id="feedback">
             <div class="feedback-card">
                 <div class="feedback-card__content">
-                    <h5 class="section__title media__text-align">константин спилберг</h5>
-                    <p class="feedback__text media__display-none-480p">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
-                    <button class="btn btn__secondary media__display-none-480p">подробнее</button>
+                    <h5 class="section__title">константин спилберг</h5>
+                    <p class="feedback__text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+                    <button class="btn btn__secondary">подробнее</button>
                     <button class="btn btn__480">читать отзыв</button>
                 </div>
                 <img src="images/feedback/feedback1.png" alt="" class="feedback-card__background">
             </div>
             <div class="feedback-card">
                 <div class="feedback-card__content">
-                    <h5 class="section__title media__text-align">константин спилберг</h5>
-                    <p class="feedback__text media__display-none-480p">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
-                    <button class="btn btn__secondary media__display-none-480p">подробнее</button>
+                    <h5 class="section__title">константин спилберг</h5>
+                    <p class="feedback__text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+                    <button class="btn btn__secondary">подробнее</button>
                     <button class="btn btn__480">читать отзыв</button>
                 </div>
                 <img src="images/feedback/feedback2.png" alt="" class="feedback-card__background">
             </div>
             <div class="feedback-card">
                 <div class="feedback-card__content">
-                    <h5 class="section__title media__text-align">константин спилберг</h5>
-                    <p class="feedback__text media__display-none-480p">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
-                    <button class="btn btn__secondary media__display-none-480p">подробнее</button>
+                    <h5 class="section__title">константин спилберг</h5>
+                    <p class="feedback__text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+                    <button class="btn btn__secondary">подробнее</button>
                     <button class="btn btn__480">читать отзыв</button>
                 </div>
                 <img src="images/feedback/feedback3.png" alt="" class="feedback-card__background">
             </div>
             <div class="feedback-card">
                 <div class="feedback-card__content">
-                    <h5 class="section__title media__text-align">константин спилберг</h5>
-                    <p class="feedback__text media__display-none-480p">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
-                    <button class="btn btn__secondary media__display-none-480p">подробнее</button>
+                    <h5 class="section__title">константин спилберг</h5>
+                    <p class="feedback__text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+                    <button class="btn btn__secondary">подробнее</button>
                     <button class="btn btn__480">читать отзыв</button>
                 </div>
                 <img src="images/feedback/feedback4.png" alt="" class="feedback-card__background">
             </div>
             <div class="feedback-card">
                 <div class="feedback-card__content">
-                    <h5 class="section__title media__text-align">константин спилберг</h5>
-                    <p class="feedback__text media__display-none-480p">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
-                    <button class="btn btn__secondary media__display-none-480p">подробнее</button>
+                    <h5 class="section__title">константин спилберг</h5>
+                    <p class="feedback__text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+                    <button class="btn btn__secondary">подробнее</button>
                     <button class="btn btn__480">читать отзыв</button>
                 </div>
                 <img src="images/feedback/feedback5.png" alt="" class="feedback-card__background">
             </div>
             <div class="feedback-card">
                 <div class="feedback-card__content">
-                    <h5 class="section__title media__text-align">константин спилберг</h5>
-                    <p class="feedback__text media__display-none-480p">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
-                    <button class="btn btn__secondary media__display-none-480p">подробнее</button>
+                    <h5 class="section__title">константин спилберг</h5>
+                    <p class="feedback__text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+                    <button class="btn btn__secondary">подробнее</button>
                     <button class="btn btn__480">читать отзыв</button>
                 </div>
                 <img src="images/feedback/feedback6.png" alt="" class="feedback-card__background">
             </div>
             <div class="feedback-card">
                 <div class="feedback-card__content">
-                    <h5 class="section__title media__text-align">константин спилберг</h5>
-                    <p class="feedback__text media__display-none-480p">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
-                    <button class="btn btn__secondary media__display-none-480p">подробнее</button>
+                    <h5 class="section__title">константин спилберг</h5>
+                    <p class="feedback__text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+                    <button class="btn btn__secondary">подробнее</button>
                     <button class="btn btn__480">читать отзыв</button>
                 </div>
                 <img src="images/feedback/feedback7.png" alt="" class="feedback-card__background">
             </div>
             <div class="feedback-card">
                 <div class="feedback-card__content">
-                    <h5 class="section__title media__text-align">константин спилберг</h5>
-                    <p class="feedback__text media__display-none-480p">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
-                    <button class="btn btn__secondary media__display-none-480p">подробнее</button>
+                    <h5 class="section__title">константин спилберг</h5>
+                    <p class="feedback__text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+                    <button class="btn btn__secondary">подробнее</button>
                     <button class="btn btn__480">читать отзыв</button>
                 </div>
                 <img src="images/feedback/feedback8.png" alt="" class="feedback-card__background">
@@ -166,9 +172,9 @@
 
         <section class="section section__order" id="order">
             <div class="container container__order">
-                <h1 class="section__title media__text-align">закажите доставку</h1>
+                <h1 class="section__title">закажите доставку</h1>
 
-                <form action="#" class="order__form media__direction-column-480p">
+                <form action="#" class="order__form">
                     <div class="order__form-address">
                         <div class="form__row">
                             <div class="input__wrapper wrapper">

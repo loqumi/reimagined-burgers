@@ -7,10 +7,6 @@
     display: flex;
 }
 
-.social_btn_list{
-    flex-direction: row;
-}
-
 .container.footer__container{
     justify-content: space-between;
 }
@@ -21,13 +17,13 @@
 }
 
 .footer__img{
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 24px;
+    height: 24px;
 }
 
 .phone__img{
-    width: 1rem;
-    height: 1rem;
+    width: 12px;
+    height: 12px;
 }
 
 .footer__item{
