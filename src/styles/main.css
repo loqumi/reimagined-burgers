@@ -93,13 +93,12 @@ textarea:focus{
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 82%;
     margin: 0 auto;
 }
 
 .section {
     height: 100vh;
-    min-height: 732px;
+    min-height: 896px;
     display: flex;
     justify-content: center;
     align-items: center;
