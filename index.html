@@ -399,24 +399,7 @@
             </ul>
         </div>
     </footer>
-    <script>
-        const humburger__btn = document.querySelector('#humburger__btn');
-        const menu__list = document.querySelector('#menu__list');
-
-        humburger__btn.addEventListener("click", function(){
-            humburger__btn.classList.toggle('active');
-            menu__list.classList.toggle('active');
-            document.body.classList.toggle('lock');
-        });
-        menu__list.addEventListener("click", function(){
-            if (menu__list.classList.contains('active')){
-                humburger__btn.classList.remove('active');
-                document.body.classList.remove('lock');
-                menu__list.classList.remove('active');
-            }
-        })
-        
-
+    <script src='script/index.js' type='module'>
     </script>
 </body>
 </html>

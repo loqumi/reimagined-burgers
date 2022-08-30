@@ -9,7 +9,7 @@
     display: none;
 }
 
-.menu__nav.active{
+body.lock .menu__nav{
     display: block;
 }
 
@@ -57,16 +57,16 @@
     bottom: 0px;
 }
 
-.menu__burger.active span{
+body.lock .menu__burger span{
     transform: scale(0);
 }
 
-.menu__burger.active::before {
+body.lock .menu__burger::before {
     top: 50%;
     transform: rotate(-45deg);
 }
 
-.menu__burger.active::after {
+body.lock .menu__burger::after {
     top: 50%;
     transform: rotate(45deg);
 }
