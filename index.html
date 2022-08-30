@@ -62,7 +62,7 @@
                 </li>
 
                 <li class="menu__item">
-                    <a href="#">бургеры</a>
+                    <a href="#burgers">бургеры</a>
                 </li>
 
                 <li class="menu__item">
@@ -91,6 +91,7 @@
     <aside class="sidebar">
         <nav class="dot_nav">
             <ul class="list dot_list">
+                <li class="dot_item"></li>
                 <li class="dot_item"></li>
                 <li class="dot_item"></li>
                 <li class="dot_item"></li>
@@ -148,6 +149,54 @@
                     </div>
                 </div>
             </div>
+        </section>
+
+        <section class="section section__burger" id="burgers">
+            <button class="btn btn__transparent btn__arrow-left slider">
+                <img src="images/icons/arrow-scroll.svg" 
+                alt="arrow-scroll-left" 
+                class="arrow-scroll-left">
+            </button>
+
+            <div class="container slider__container">
+                <ul class="slider__list list">
+                    <li class="list__item-burger">
+                        <div class="slider__item-header">
+                            <div class="burger-btns">
+                                <button class="btn btn__warning">
+                                    <img src="images/icons/burger.svg" alt="burger">
+                                    <span>Состав</span>
+                                </button>
+
+                                <button class="btn btn__transparent" disabled>
+                                    <img src="images/icons/kkal.svg" alt="kkal">
+                                    <span class="count">1200</span>
+                                    <span>ккал</span>
+                                </button>
+                            </div>
+
+                            <img class="burger_img" src="images/icons/Dark beef burger.png" alt="dark-beef-burger">
+
+                        </div>
+                        <div class="slider__item-body">
+                            <h1 class="section__title burger__title">Dark Beef Burger</h1>
+                            <p class="slider-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor perferendis eum fugiat ducimus sunt sint culpa laboriosam aliquid doloribus. Similique, voluptatem natus! Nostrum eum, quasi quia dicta aut optio accusamus!</p>
+
+                            <div class="slider__item-block">
+                                <span class="warning">500</span>
+                                <span class="warning">рублей</span>
+                                <button class="btn btn__warning">заказать</button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <button class="btn btn__transparent btn__arrow-right slider">
+                <img src="images/icons/arrow-scroll.svg" 
+                alt="arrow-scroll-right" 
+                class="arrow-scroll-right">
+            </button>
         </section>
 
         <section class="section section__feedback" id="feedback">
