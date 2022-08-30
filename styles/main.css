@@ -41,6 +41,11 @@ body.lock {
     border-radius: 0.5rem;
 }
 
+.btn.menu__burger{
+    padding-left: 0px;
+    padding-right: 20px;
+}
+
 .btn.slider {
     padding: 8px 0 0 0;
 }
