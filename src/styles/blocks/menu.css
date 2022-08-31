@@ -1,0 +1,72 @@
+.menu__nav{
+    position: fixed;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    display: none;
+}
+
+body.lock .menu__nav{
+    display: block;
+}
+
+.menu__list{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 100px 0 0 0;
+}
+
+.menu__item{
+    font-family: "Ubuntu";
+    font-size: 18px;
+    font-weight: 300;
+    padding: 20px 0 20px 0;
+    text-transform: uppercase;
+}
+
+.menu__burger{
+    position: fixed;
+    right: 10vw;
+    top: 50px;
+    z-index: 2;
+    padding-left: 10px;
+    padding-right: 40px;
+    width: 28px;
+}
+
+.menu__burger span,
+.menu__burger::before,
+.menu__burger::after{
+    content:'';
+    background-color: var(--white);
+    position: absolute;
+    width: 22px;
+    height: 2px;
+    transition: all 0.3s ease 0s;
+}
+
+.menu__burger::before{
+    top: 2px;
+}
+
+.menu__burger::after{
+    bottom: 0px;
+}
+
+body.lock .menu__burger span{
+    transform: scale(0);
+}
+
+body.lock .menu__burger::before {
+    top: 50%;
+    transform: rotate(-45deg);
+}
+
+body.lock .menu__burger::after {
+    top: 50%;
+    transform: rotate(45deg);
+}

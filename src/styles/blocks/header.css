@@ -6,6 +6,7 @@
 .container.header__container {
     margin-top: 15px;
     justify-content: space-around;
+    padding: 0 70px 0 70px;
 }
 .header__logo{
     margin-top: 15px;
@@ -35,40 +36,4 @@
     right: -29px;
     top: 35%;
     border-radius: 50%;
-}
-
-.btn-group{
-    display: flex;
-    justify-content: center;
-}
-
-.header__burger{
-    display: none;
-    position: relative;
-    width: 40px;
-    
-}
-
-.header__burger span{
-    position: absolute;
-    background-color: var(--white);
-    width: 22px;
-    height: 2px;
-}
-
-.header__burger::before,
-.header__burger::after{
-    content:'';
-    background-color: var(--white);
-    position: absolute;
-    width: 22px;
-    height: 2px;
-}
-
-.header__burger::before{
-    bottom: 7px;
-}
-
-.header__burger::after{
-    top: 9px;
 }
