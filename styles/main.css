@@ -142,6 +142,19 @@ textarea:focus{
     margin-bottom: 40px;
 }
 
+h4 {
+    padding: 0 20px;
+}
+
+.section__team {
+    justify-content: end;
+}
+
+.team__container {
+    margin: 0 0;
+    align-items: start;
+}
+
 @media (min-width: 1px){
 
     html {
