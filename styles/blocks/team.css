@@ -6,7 +6,6 @@
 .team__container {
     flex-direction: column;
     justify-content: end;
-    padding: 0 150px;
     height: 100%;
     background-color: rgba(29, 29, 29, 0.822);
 }
@@ -29,7 +28,8 @@
     height: 0;
     border: 8px solid transparent;
     border-top: 0;
-    border-bottom: 12px solid rgb(255, 166, 0);
+    border-bottom: 12px solid var(--white);
+    transition: 0.3s;
 }
 
 .card__name {
@@ -38,11 +38,30 @@
 }
 
 .card__name-about {
+    display: none;
+}
+
+.accordion.active + .card__name-about {
     display: flex;
-    flex-direction: row;
+}
+
+.accordion.active h4 {
+    color: var(--title)
 }
 
 .card__name-text {
-    padding-left: 50px;
-    width: 70%;
+    width: 60%;
+}
+
+.accordion:hover .triangle{
+    border-bottom: 12px solid gray;
+}
+
+.accordion:hover {
+    color: gray;
+}
+
+.accordion.active .triangle {
+    transform: rotate(180deg);
+    border-bottom: 12px solid var(--title);
 }
