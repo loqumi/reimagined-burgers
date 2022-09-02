@@ -1,6 +1,11 @@
 .section__slider {
-background: rgb(255,218,0);
-background: linear-gradient(180deg, rgba(255,218,0,1) 0%, rgba(255,166,0,1) 50%, rgba(255,218,0,1) 100%);
+    background: rgb(255,218,0);
+    background: linear-gradient(180deg, rgba(255,218,0,1) 0%, rgba(255,166,0,1) 50%, rgba(255,218,0,1) 100%);
+}
+
+.slider__container {
+    overflow: hidden;
+    width: 90%;
 }
 
 .burger-btns {
@@ -32,8 +37,15 @@ background: linear-gradient(180deg, rgba(255,218,0,1) 0%, rgba(255,166,0,1) 50%,
     text-align: center;
 }
 
+.slider__list {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
 .slider__list .list__item-burger {
     display: flex;
+    min-width: 100%;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -59,9 +71,10 @@ background: linear-gradient(180deg, rgba(255,218,0,1) 0%, rgba(255,166,0,1) 50%,
 
 .btn__arrow-left {
     transform: translateX(20px) rotate(90deg);
-    padding: 0;
+    z-index: 3;
 }
 
 .btn__arrow-right {
     transform: translateX(-20px) rotate(270deg);
+    z-index: 3;
 }
