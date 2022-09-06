@@ -4,6 +4,7 @@ const answ_window = document.querySelector('.response__order');
 const response_btn = document.querySelector('.response_btn');
 const phone = document.querySelector('#phone');
 const response_answer = document.querySelector('.response-answer');
+const response__order = document.querySelector('.response__order');
 
     phone.addEventListener('keydown', function(event){
         let isDigit = false;
@@ -67,6 +68,9 @@ const response_answer = document.querySelector('.response-answer');
         }
     }
 
-    response_btn.addEventListener("click", () => {
-        answ_window.classList.toggle('active');
-    })
+    [response_btn, response__order].forEach((elem)=>{
+        elem.addEventListener("click", () => {
+    
+            answ_window.classList.toggle('active'); 
+            }); 
+    });
