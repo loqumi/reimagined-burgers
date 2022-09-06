@@ -19,35 +19,14 @@ const response_answer = document.querySelector('.response-answer');
             xhr.open('POST', 'https://6316ed1182797be77fee4469.mockapi.io/order/burger');
             xhr.send(JSON.stringify(data));
             xhr.addEventListener('load', () => {
-                if(xhr.response.success) {
-                    answ_window.classList.toggle('active');
-                    answ_window.classList.toggle('true');
-                    response_answer.innerHTML = "Ваш заказ успешно оформлен";
-                } else {
-                    answ_window.classList.toggle('active');
-                    answ_window.classList.toggle('false');
-                    response_answer.innerHTML = "Произошла ошибка";
-                }
+                answ_window.classList.toggle('active');
+                response_answer.innerHTML = (xhr.response.success) ? "Ваш заказ успешно оформлен" : "Произошла ошибка";
             });
         }
     });
 
     function validateForm(form){
-        let valid = true;
-
-        if (!validateField(form.elements.firstName)) {
-            valid = false;
-        }
-
-        if (!validateField(form.elements.telephone)) {
-            valid = false;
-        }
-
-        if (!validateField(form.elements.comment)) {
-            valid = false;
-        }
-
-        return valid;
+        return [form.elements.firstName, form.elements.telephone, form.elements.comment].every(elem => (validateField(elem)))
     }
 
     const VALID_MESSAGE = {
@@ -57,6 +36,7 @@ const response_answer = document.querySelector('.response-answer');
     function validateField(field) {
         if (!field.checkValidity()) {
             field.nextElementSibling.textContent = VALID_MESSAGE[field.validationMessage] || field.validationMessage;
+            field.focus();
             return false;
         } else {
             field.nextElementSibling.textContent = "";
@@ -66,9 +46,4 @@ const response_answer = document.querySelector('.response-answer');
 
     response_btn.addEventListener("click", () => {
         answ_window.classList.toggle('active');
-        if(answ_window.classList.contains('true')) {
-            answ_window.classList.toggle('true');
-        } else {
-            answ_window.classList.toggle('false');
-        }
     })

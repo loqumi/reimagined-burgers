@@ -1,11 +1,11 @@
+@import "about_us.css";
+@import "contacts.css";
+@import "feedback.css";
+@import "footer.css";
+@import "form.css";
 @import "header.css";
 @import "menu.css";
-@import "footer.css";
 @import "preview.css";
+@import "sidebar.css";
 @import "slider.css";
 @import "team.css";
-@import "sidebar.css";
-@import "about_us.css";
-@import "feedback.css";
-@import "form.css";
-@import "contacts.css";
