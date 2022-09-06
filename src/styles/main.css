@@ -153,6 +153,11 @@ h5 {
     font-size: 1.2rem;
 }
 
+.consist__list-item span {
+    text-transform: capitalize;
+    color: var(--black);
+}
+
 @media (min-width: 1px){
 
     html {
