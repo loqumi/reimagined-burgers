@@ -163,6 +163,38 @@
                                 <button class="btn btn__warning">
                                     <img src="images/icons/burger.svg" alt="burger">
                                     <span>Состав</span>
+                                    <div class="consist">
+                                        <div class="consist__list-item">
+                                            <img src="images/icons/beef.svg" alt="beef">
+                                            <span class="consist-name">Говядина</span>
+                                            <span>300г</span>
+                                        </div>
+                                        <div class="consist__list-item">
+                                            <img src="images/icons/buns.svg" alt="buns">
+                                            <span>Булочки</span>
+                                            <span>100г</span>
+                                        </div>
+                                        <div class="consist__list-item">
+                                            <img src="images/icons/salad.svg" alt="salad">
+                                            <span>Зелень</span>
+                                            <span>70г</span>
+                                        </div>
+                                        <div class="consist__list-item">
+                                            <img src="images/icons/sauce.svg" alt="sauce">
+                                            <span>Соус</span>
+                                            <span>150г</span>
+                                        </div>
+                                        <div class="consist__list-item">
+                                            <img src="images/icons/cucumber.svg" alt="cucumber">
+                                            <span>Овощи</span>
+                                            <span>200г</span>
+                                        </div>
+                                        <div class="consist__list-item">
+                                            <img src="images/icons/cheese.svg" alt="cheese">
+                                            <span>Сыр</span>
+                                            <span>80г</span>
+                                        </div>
+                                    </div>
                                 </button>
 
                                 <button class="btn btn__transparent" disabled>
@@ -468,11 +500,13 @@
                         <div class="form__row">
                             <div class="input__wrapper wrapper">
                                 <label for="firstName">имя</label>
-                                <input type="text" id="firstName" name="firstName" class="input">
+                                <input type="text" id="firstName" name="firstName" class="input" required>
+                                <div class="error"></div>
                             </div>
                             <div class="input__wrapper wrapper">
-                                <label for="lastName">фамилия</label>
-                                <input type="text" id="lastName" name="lastName" class="input">
+                                <label for="telephone">телефон</label>
+                                <input type="text" id="telephone" name="telephone" class="input" required>
+                                <div class="error"></div>
                             </div>
                         </div>
                         <div class="form__row">
@@ -505,7 +539,8 @@
                         <div class="form__row">
                             <div class="input__wrapper wrapper">
                                 <label for="comment">комментарий</label>
-                                <textarea id="comment" class="input"></textarea>
+                                <textarea id="comment" class="input" name="comment" required></textarea>
+                                <div class="error"></div>
                             </div>
                         </div>
 
@@ -529,11 +564,19 @@
                         </div>
 
                         <div class="form__row">
-                            <button class="btn btn__warning">
+                            <button class="btn order__btn btn__warning">
                                 заказать
                             </button>
 
                             <button class="btn btn__transparent" type="reset">очистить</button>
+                        </div>
+                    </div>
+                    <div class="response__order">
+                        <div class="response__window">
+                            <div class="response__text">
+                                <span class="response-answer"></span>
+                            </div>
+                            <button class="btn btn__warning response_btn" type="reset">Закрыть</button>
                         </div>
                     </div>
                 </form>
