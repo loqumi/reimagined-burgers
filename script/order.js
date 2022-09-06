@@ -4,7 +4,6 @@ const answ_window = document.querySelector('.response__order');
 const response_btn = document.querySelector('.response_btn');
 const phone = document.querySelector('#phone');
 const response_answer = document.querySelector('.response-answer');
-const response__order = document.querySelector('.response__order');
 
     phone.addEventListener('keydown', function(event){
         let isDigit = false;
@@ -30,13 +29,14 @@ const response__order = document.querySelector('.response__order');
 
     btn.addEventListener('click', function(event) {
         event.preventDefault();
-        
+
         if (validateForm(orderform)) {
             const data = {
                 firstName:orderform.elements.name.value,
                 telephone:orderform.elements.phone.value,
                 comment:orderform.elements.comment.value
             };
+            btn.setAttribute('disabled', '');
 
             const xhr = new XMLHttpRequest();
             xhr.responseType = 'json';
@@ -45,6 +45,7 @@ const response__order = document.querySelector('.response__order');
             xhr.addEventListener('load', () => {
                 answ_window.classList.toggle('active');
                 response_answer.innerHTML = (xhr.response.success) ? "Ваш заказ успешно оформлен" : "Произошла ошибка";
+                btn.removeAttribute('disabled');
             });
         }
     });
@@ -68,9 +69,6 @@ const response__order = document.querySelector('.response__order');
         }
     }
 
-    [response_btn, response__order].forEach((elem)=>{
-        elem.addEventListener("click", () => {
-    
-            answ_window.classList.toggle('active'); 
-            }); 
-    });
+    response_btn.addEventListener("click", () => {
+        answ_window.classList.toggle('active');
+    })
