@@ -158,10 +158,27 @@ h5 {
     color: var(--black);
 }
 
+.section__menu {
+    justify-content: unset;
+    align-items: unset;
+}
+
 @media (min-width: 1px){
 
     html {
         font-size: 12px;
+    }
+
+    .menu__container {
+        justify-content: end;
+    }
+
+    .menu__container h1 {
+        position: absolute;
+    }
+
+    .food__item h2 {
+        font-size: 1.5rem;
     }
 
     .consist {
@@ -318,6 +335,18 @@ h5 {
    
     html {
         font-size: 13px;
+    }
+
+    .menu__container {
+        justify-content: space-between;
+    }
+
+    .menu__container h1 {
+        position: relative;
+    }
+
+    .food__item h2 {
+        font-size: 2.5rem;
     }
 
     .consist {
