@@ -1,0 +1,71 @@
+.section__menu { 
+    background: url('../../images/bg/menu.png') center center / cover no-repeat;
+    position: relative;
+}
+
+.menu__container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.menu__container h1 {
+    padding-top: 25px;
+    text-align: center;
+    left: 0;
+    width: 50%;
+    z-index: 1;
+}
+
+.menu__food {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    z-index: 2;
+}
+
+.food_menu-item {
+    background: rgba(0, 0, 0, 0.658);
+    padding: 0 1px 0 1px;
+}
+
+.food__item { 
+    height: 100%;
+    writing-mode: vertical-rl;
+}
+
+.food_menu-text {
+    background: rgba(95, 95, 95, 0.822);
+    padding: 10px 20px 10px 20px;
+    display:none;
+}
+
+.food__item h2 {
+    transform: rotate(180deg);
+    font-family: Gagalin, sans-serif;
+    padding-top: 100px;
+}
+
+.food__item.active h2 {
+    color: var(--title);
+} 
+
+.food__item:hover h2 {
+    color: gray;
+} 
+
+.food__item.active + .food_menu-text {
+    display: block;
+}
+
+.food-pic1 {
+    background: url('../../images/icons/menu-food1.png') center center / cover no-repeat;
+}
+
+.food-pic2 {
+    background: url('../../images/icons/menu-food2.png') center center / cover no-repeat;
+}
+
+.food-pic3 {
+    background: url('../../images/icons/menu-food3.png') center center / cover no-repeat;
+}
