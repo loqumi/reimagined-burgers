@@ -11,10 +11,12 @@
 
 .menu__container h1 {
     padding-top: 25px;
-    text-align: center;
+    text-align: start;
+    padding: 100px 0 0 100px;
     left: 0;
     width: 50%;
     z-index: 1;
+    color: var(--white);
 }
 
 .menu__food {
@@ -38,6 +40,7 @@
     background: rgba(95, 95, 95, 0.822);
     padding: 10px 20px 10px 20px;
     display:none;
+    justify-content: start;
 }
 
 .food__item h2 {
@@ -55,7 +58,7 @@
 } 
 
 .food__item.active + .food_menu-text {
-    display: block;
+    display: flex;
 }
 
 .food-pic1 {
@@ -68,4 +71,23 @@
 
 .food-pic3 {
     background: url('../../images/icons/menu-food3.png') center center / cover no-repeat;
+}
+
+.exit__btn {
+    width: 32px;
+    height: 2px;
+}
+
+.exit__btn span,
+.exit__btn::before {
+    content:'';
+    background-color: var(--white);
+    position: absolute;
+    width: 22px;
+    height: 2px;
+    transform: rotate(45deg);
+}
+
+.exit__btn::before {
+    transform: rotate(-45deg);
 }

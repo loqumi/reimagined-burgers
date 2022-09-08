@@ -42,7 +42,12 @@ body.lock {
     border-radius: 0.5rem;
 }
 
-.btn.menu__burger{
+.btn.menu__burger {
+    padding-left: 0px;
+    padding-right: 20px;
+}
+
+.btn.exit__btn {
     padding-left: 0px;
     padding-right: 20px;
 }
