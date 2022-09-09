@@ -79,7 +79,7 @@ label:first-letter {
     text-transform: uppercase;
 }
 
-input {
+input.input {
     margin-top: 0.33rem;
     padding: 0.33rem;
     border-radius: 0.4rem;
@@ -88,7 +88,7 @@ input {
     border: 0.13rem transparent solid;
 }
 
-input:focus{
+input.input:focus{
     border: 0.13rem solid var(--title);
 }
 
