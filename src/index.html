@@ -44,7 +44,7 @@
                     </li>
                 </ul>
             </nav>
-            
+
             <a href="#order" class="btn header__btn btn__warning">
                 заказать
             </a>
@@ -151,8 +151,8 @@
 
         <section class="section section__slider" id="burgers">
             <button class="btn btn__transparent btn__arrow-left slider">
-                <img src="images/icons/arrow-scroll.svg" 
-                alt="arrow-scroll-left" 
+                <img src="images/icons/arrow-scroll.svg"
+                alt="arrow-scroll-left"
                 class="arrow-scroll-left">
             </button>
 
@@ -477,8 +477,8 @@
             </div>
 
             <button class="btn btn__transparent btn__arrow-right slider">
-                <img src="images/icons/arrow-scroll.svg" 
-                alt="arrow-scroll-right" 
+                <img src="images/icons/arrow-scroll.svg"
+                alt="arrow-scroll-right"
                 class="arrow-scroll-right">
             </button>
         </section>
@@ -660,7 +660,26 @@
         </section>
 
         <section class="section section__how-we-work" id="how-we-work">
-            
+            <div class="container how-we-work__container">
+                <h1 class="section__title">как мы работаем</h1>
+                <div class="c-video" id="video_player">
+                    <video class="video" src="images/video/video.mp4" id="main_video"></video>
+                    <div class="controls">
+                        <div class="progress-area">
+                            <div class="progress-bar">
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="play_pause">
+                            <img class="play" id="play-pause" src="images/icons/play.svg" alt="">
+                        </div>
+                        <span class="volume">
+                            <img src="images/icons/volume.svg" class="volume">
+                            <input type="range" min="0" max="100" class="volume_range">
+                        </span>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section class="section section__order" id="order">
@@ -754,7 +773,7 @@
                 </form>
             </div>
         </section>
-        
+
         <section class="section section__contacts" id="contacts">
         </section>
     </main>
