@@ -1,0 +1,67 @@
+.section__team {
+    background: url("../../images/bg/teambg.png") center top / cover no-repeat;
+    justify-content: end;
+}
+
+.team__container {
+    flex-direction: column;
+    justify-content: end;
+    height: 100%;
+    background-color: rgba(29, 29, 29, 0.822);
+}
+
+.accordion {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.round {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border: 8px solid transparent;
+    border-top: 0;
+    border-bottom: 12px solid var(--white);
+    transition: 0.3s;
+}
+
+.card__name {
+    display: flex;
+    flex-direction: column;
+}
+
+.card__name-about {
+    display: none;
+}
+
+.accordion.active + .card__name-about {
+    display: flex;
+}
+
+.accordion.active h4 {
+    color: var(--title)
+}
+
+.card__name-text {
+    width: 60%;
+}
+
+.accordion:hover .triangle{
+    border-bottom: 12px solid gray;
+}
+
+.accordion:hover {
+    color: gray;
+}
+
+.accordion.active .triangle {
+    transform: rotate(180deg);
+    border-bottom: 12px solid var(--title);
+}

@@ -19,11 +19,11 @@
                     </li>
 
                     <li class="list__item">
-                        <a>бургеры</a>
+                        <a href="#burgers">бургеры</a>
                     </li>
 
                     <li class="list__item">
-                        <a>команда</a>
+                        <a href="#team" >команда</a>
                     </li>
 
                     <li class="list__item">
@@ -44,9 +44,9 @@
                 </ul>
             </nav>
             
-            <button class="btn header__btn btn__warning">
-                 <a href="#order">заказать</a>
-            </button>
+            <a href="#order" class="btn header__btn btn__warning">
+                заказать
+            </a>
         </div>
     </header>
 
@@ -112,11 +112,9 @@
                     <h2 class="section__subtitle">натуральные бургеры</h2>
                 </div>
             </div>
-            <button class="btn btn__arrow-down">
-                <a href="#about">
-                    <img src="images/icons/arrow-scroll.svg" alt="arrow-scroll" class="arrow-scroll-down">
-                </a>
-            </button>
+            <a href="#about" class="btn btn__arrow-down">
+                <img src="images/icons/arrow-scroll.svg" alt="arrow-scroll" class="arrow-scroll-down">
+            </a>
         </section>
 
         <section class="section section__about" id="about">
@@ -162,9 +160,41 @@
                     <li class="list__item-burger">
                         <div class="slider__item-header">
                             <div class="burger-btns">
-                                <button class="btn btn__warning">
+                                <button class="btn btn__warning consist__btn">
                                     <img src="images/icons/burger.svg" alt="burger">
                                     <span>Состав</span>
+                                    <div class="consist">
+                                        <div class="consist__list-item">
+                                            <img src="images/icons/beef.svg" alt="beef">
+                                            <span class="consist-name">Говядина</span>
+                                            <span>300г</span>
+                                        </div>
+                                        <div class="consist__list-item">
+                                            <img src="images/icons/buns.svg" alt="buns">
+                                            <span>Булочки</span>
+                                            <span>100г</span>
+                                        </div>
+                                        <div class="consist__list-item">
+                                            <img src="images/icons/salad.svg" alt="salad">
+                                            <span>Зелень</span>
+                                            <span>70г</span>
+                                        </div>
+                                        <div class="consist__list-item">
+                                            <img src="images/icons/sauce.svg" alt="sauce">
+                                            <span>Соус</span>
+                                            <span>150г</span>
+                                        </div>
+                                        <div class="consist__list-item">
+                                            <img src="images/icons/cucumber.svg" alt="cucumber">
+                                            <span>Овощи</span>
+                                            <span>200г</span>
+                                        </div>
+                                        <div class="consist__list-item">
+                                            <img src="images/icons/cheese.svg" alt="cheese">
+                                            <span>Сыр</span>
+                                            <span>80г</span>
+                                        </div>
+                                    </div>
                                 </button>
 
                                 <button class="btn btn__transparent" disabled>
@@ -174,7 +204,7 @@
                                 </button>
                             </div>
 
-                            <img class="burger_img" src="images/icons/Dark beef burger.png" alt="dark-beef-burger">
+                            <img class="burger_img" src="images/burgers-slider/Dark beef burger.png" alt="dark-beef-burger">
 
                         </div>
                         <div class="slider__item-body">
@@ -184,7 +214,261 @@
                             <div class="slider__item-block">
                                 <span class="warning">500</span>
                                 <span class="warning">рублей</span>
-                                <button class="btn btn__warning">заказать</button>
+                                <a href="#order" class="btn btn__warning">
+                                    заказать
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list__item-burger">
+                        <div class="slider__item-header">
+                            <div class="burger-btns">
+                                <button class="btn btn__warning consist__btn">
+                                    <img src="images/icons/burger.svg" alt="burger">
+                                    <span>Состав</span>
+                                    <div class="consist">
+                                        <div class="consist__list-item">
+                                            <img src="images/icons/beef.svg" alt="beef">
+                                            <span class="consist-name">Говядина</span>
+                                            <span>300г</span>
+                                        </div>
+                                        <div class="consist__list-item">
+                                            <img src="images/icons/buns.svg" alt="buns">
+                                            <span>Булочки</span>
+                                            <span>100г</span>
+                                        </div>
+                                        <div class="consist__list-item">
+                                            <img src="images/icons/salad.svg" alt="salad">
+                                            <span>Зелень</span>
+                                            <span>70г</span>
+                                        </div>
+                                        <div class="consist__list-item">
+                                            <img src="images/icons/sauce.svg" alt="sauce">
+                                            <span>Соус</span>
+                                            <span>150г</span>
+                                        </div>
+                                        <div class="consist__list-item">
+                                            <img src="images/icons/cucumber.svg" alt="cucumber">
+                                            <span>Овощи</span>
+                                            <span>200г</span>
+                                        </div>
+                                        <div class="consist__list-item">
+                                            <img src="images/icons/cheese.svg" alt="cheese">
+                                            <span>Сыр</span>
+                                            <span>80г</span>
+                                        </div>
+                                    </div>
+                                </button>
+
+                                <button class="btn btn__transparent" disabled>
+                                    <img src="images/icons/kkal.svg" alt="kkal">
+                                    <span class="count">1200</span>
+                                    <span>ккал</span>
+                                </button>
+                            </div>
+
+                            <img class="burger_img" src="images/burgers-slider/burger_sandwich_PNG4124.png" alt="dark-beef-burger">
+
+                        </div>
+                        <div class="slider__item-body">
+                            <h1 class="section__title burger__title">Dark Beef Burger</h1>
+                            <p class="slider-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor perferendis eum fugiat ducimus sunt sint culpa laboriosam aliquid doloribus. Similique, voluptatem natus! Nostrum eum, quasi quia dicta aut optio accusamus!</p>
+
+                            <div class="slider__item-block">
+                                <span class="warning">500</span>
+                                <span class="warning">рублей</span>
+                                <a href="#order" class="btn btn__warning">
+                                    заказать
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list__item-burger">
+                        <div class="slider__item-header">
+                            <div class="burger-btns">
+                                <button class="btn btn__warning consist__btn">
+                                    <img src="images/icons/burger.svg" alt="burger">
+                                    <span>Состав</span>
+                                    <div class="consist">
+                                        <div class="consist__list-item">
+                                            <img src="images/icons/beef.svg" alt="beef">
+                                            <span class="consist-name">Говядина</span>
+                                            <span>300г</span>
+                                        </div>
+                                        <div class="consist__list-item">
+                                            <img src="images/icons/buns.svg" alt="buns">
+                                            <span>Булочки</span>
+                                            <span>100г</span>
+                                        </div>
+                                        <div class="consist__list-item">
+                                            <img src="images/icons/salad.svg" alt="salad">
+                                            <span>Зелень</span>
+                                            <span>70г</span>
+                                        </div>
+                                        <div class="consist__list-item">
+                                            <img src="images/icons/sauce.svg" alt="sauce">
+                                            <span>Соус</span>
+                                            <span>150г</span>
+                                        </div>
+                                        <div class="consist__list-item">
+                                            <img src="images/icons/cucumber.svg" alt="cucumber">
+                                            <span>Овощи</span>
+                                            <span>200г</span>
+                                        </div>
+                                        <div class="consist__list-item">
+                                            <img src="images/icons/cheese.svg" alt="cheese">
+                                            <span>Сыр</span>
+                                            <span>80г</span>
+                                        </div>
+                                    </div>
+                                </button>
+
+                                <button class="btn btn__transparent" disabled>
+                                    <img src="images/icons/kkal.svg" alt="kkal">
+                                    <span class="count">1200</span>
+                                    <span>ккал</span>
+                                </button>
+                            </div>
+
+                            <img class="burger_img" src="images/burgers-slider/Chiken burger.png" alt="dark-beef-burger">
+
+                        </div>
+                        <div class="slider__item-body">
+                            <h1 class="section__title burger__title">Dark Beef Burger</h1>
+                            <p class="slider-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor perferendis eum fugiat ducimus sunt sint culpa laboriosam aliquid doloribus. Similique, voluptatem natus! Nostrum eum, quasi quia dicta aut optio accusamus!</p>
+
+                            <div class="slider__item-block">
+                                <span class="warning">500</span>
+                                <span class="warning">рублей</span>
+                                <a href="#order" class="btn btn__warning">
+                                    заказать
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list__item-burger">
+                        <div class="slider__item-header">
+                            <div class="burger-btns">
+                                <button class="btn btn__warning consist__btn">
+                                    <img src="images/icons/burger.svg" alt="burger">
+                                    <span>Состав</span>
+                                    <div class="consist">
+                                        <div class="consist__list-item">
+                                            <img src="images/icons/beef.svg" alt="beef">
+                                            <span class="consist-name">Говядина</span>
+                                            <span>300г</span>
+                                        </div>
+                                        <div class="consist__list-item">
+                                            <img src="images/icons/buns.svg" alt="buns">
+                                            <span>Булочки</span>
+                                            <span>100г</span>
+                                        </div>
+                                        <div class="consist__list-item">
+                                            <img src="images/icons/salad.svg" alt="salad">
+                                            <span>Зелень</span>
+                                            <span>70г</span>
+                                        </div>
+                                        <div class="consist__list-item">
+                                            <img src="images/icons/sauce.svg" alt="sauce">
+                                            <span>Соус</span>
+                                            <span>150г</span>
+                                        </div>
+                                        <div class="consist__list-item">
+                                            <img src="images/icons/cucumber.svg" alt="cucumber">
+                                            <span>Овощи</span>
+                                            <span>200г</span>
+                                        </div>
+                                        <div class="consist__list-item">
+                                            <img src="images/icons/cheese.svg" alt="cheese">
+                                            <span>Сыр</span>
+                                            <span>80г</span>
+                                        </div>
+                                    </div>
+                                </button>
+
+                                <button class="btn btn__transparent" disabled>
+                                    <img src="images/icons/kkal.svg" alt="kkal">
+                                    <span class="count">1200</span>
+                                    <span>ккал</span>
+                                </button>
+                            </div>
+
+                            <img class="burger_img" src="images/burgers-slider/NYC-Diner-Bacon-Cheeseburger.png" alt="dark-beef-burger">
+
+                        </div>
+                        <div class="slider__item-body">
+                            <h1 class="section__title burger__title">Dark Beef Burger</h1>
+                            <p class="slider-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor perferendis eum fugiat ducimus sunt sint culpa laboriosam aliquid doloribus. Similique, voluptatem natus! Nostrum eum, quasi quia dicta aut optio accusamus!</p>
+
+                            <div class="slider__item-block">
+                                <span class="warning">500</span>
+                                <span class="warning">рублей</span>
+                                <a href="#order" class="btn btn__warning">
+                                    заказать
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list__item-burger">
+                        <div class="slider__item-header">
+                            <div class="burger-btns">
+                                <button class="btn btn__warning consist__btn">
+                                    <img src="images/icons/burger.svg" alt="burger">
+                                    <span>Состав</span>
+                                    <div class="consist">
+                                        <div class="consist__list-item">
+                                            <img src="images/icons/beef.svg" alt="beef">
+                                            <span class="consist-name">Говядина</span>
+                                            <span>300г</span>
+                                        </div>
+                                        <div class="consist__list-item">
+                                            <img src="images/icons/buns.svg" alt="buns">
+                                            <span>Булочки</span>
+                                            <span>100г</span>
+                                        </div>
+                                        <div class="consist__list-item">
+                                            <img src="images/icons/salad.svg" alt="salad">
+                                            <span>Зелень</span>
+                                            <span>70г</span>
+                                        </div>
+                                        <div class="consist__list-item">
+                                            <img src="images/icons/sauce.svg" alt="sauce">
+                                            <span>Соус</span>
+                                            <span>150г</span>
+                                        </div>
+                                        <div class="consist__list-item">
+                                            <img src="images/icons/cucumber.svg" alt="cucumber">
+                                            <span>Овощи</span>
+                                            <span>200г</span>
+                                        </div>
+                                        <div class="consist__list-item">
+                                            <img src="images/icons/cheese.svg" alt="cheese">
+                                            <span>Сыр</span>
+                                            <span>80г</span>
+                                        </div>
+                                    </div>
+                                </button>
+
+                                <button class="btn btn__transparent" disabled>
+                                    <img src="images/icons/kkal.svg" alt="kkal">
+                                    <span class="count">1200</span>
+                                    <span>ккал</span>
+                                </button>
+                            </div>
+
+                            <img class="burger_img" src="images/burgers-slider/Spicy_Shrimp_Burger.png" alt="dark-beef-burger">
+
+                        </div>
+                        <div class="slider__item-body">
+                            <h1 class="section__title burger__title">Dark Beef Burger</h1>
+                            <p class="slider-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor perferendis eum fugiat ducimus sunt sint culpa laboriosam aliquid doloribus. Similique, voluptatem natus! Nostrum eum, quasi quia dicta aut optio accusamus!</p>
+
+                            <div class="slider__item-block">
+                                <span class="warning">500</span>
+                                <span class="warning">рублей</span>
+                                <a href="#order" class="btn btn__warning">
+                                    заказать
+                                </a>
                             </div>
                         </div>
                     </li>
@@ -196,6 +480,68 @@
                 alt="arrow-scroll-right" 
                 class="arrow-scroll-right">
             </button>
+        </section>
+
+        <section class="section section__team" id="team">
+            <div class="container team__container">
+                <h1 class="section__title">команда</h1>
+
+                <div class="card__name">
+                    <button class="btn btn__transparent accordion">
+                        <div class= "triangle"></div>
+                        <h4>Дэенил Редклиф</h4>
+                    </button>
+                    <div class="card__name-about">
+                        <img src="images/icons/aphex.png" alt="man" class="round">
+                        <div class="card__name-text">
+                            <h5>Оператор</h5>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita, blanditiis?</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card__name">
+                    <button class="btn btn__transparent accordion">
+                        <div class= "triangle"></div>
+                        <h4>Дэенил Редклиф</h4>
+                    </button>
+                    <div class="card__name-about">
+                        <img src="images/icons/aphex.png" alt="man" class="round">
+                        <div class="card__name-text">
+                            <h5>Оператор</h5>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita, blanditiis?</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card__name">
+                    <button class="btn btn__transparent accordion">
+                        <div class= "triangle"></div>
+                        <h4>Дэенил Редклиф</h4>
+                    </button>
+                    <div class="card__name-about">
+                        <img src="images/icons/aphex.png" alt="man" class="round">
+                        <div class="card__name-text">
+                            <h5>Оператор</h5>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita, blanditiis?</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card__name">
+                    <button class="btn btn__transparent accordion">
+                        <div class= "triangle"></div>
+                        <h4>Дэенил Редклиф</h4>
+                    </button>
+                    <div class="card__name-about">
+                        <img src="images/icons/aphex.png" alt="man" class="round">
+                        <div class="card__name-text">
+                            <h5>Оператор</h5>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita, blanditiis?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section class="section section__feedback" id="feedback">
@@ -281,12 +627,14 @@
                     <div class="order__form-address">
                         <div class="form__row">
                             <div class="input__wrapper wrapper">
-                                <label for="firstName">имя</label>
-                                <input type="text" id="firstName" name="firstName" class="input">
+                                <label for="name">имя</label>
+                                <input type="text" id="name" name="name" class="input" required>
+                                <div class="error"></div>
                             </div>
                             <div class="input__wrapper wrapper">
-                                <label for="lastName">фамилия</label>
-                                <input type="text" id="lastName" name="lastName" class="input">
+                                <label for="phone">телефон</label>
+                                <input type="text" id="phone" name="phone" class="input" required>
+                                <div class="error"></div>
                             </div>
                         </div>
                         <div class="form__row">
@@ -319,7 +667,8 @@
                         <div class="form__row">
                             <div class="input__wrapper wrapper">
                                 <label for="comment">комментарий</label>
-                                <textarea id="comment" class="input"></textarea>
+                                <textarea id="comment" class="input" name="comment" required></textarea>
+                                <div class="error"></div>
                             </div>
                         </div>
 
@@ -343,17 +692,25 @@
                         </div>
 
                         <div class="form__row">
-                            <button class="btn btn__warning">
-                                <a href="#order">заказать</a>
+                            <button class="btn order__btn btn__warning">
+                                заказать
                             </button>
 
                             <button class="btn btn__transparent" type="reset">очистить</button>
                         </div>
                     </div>
+                    <div class="response__order">
+                        <div class="response__window">
+                            <div class="response__text">
+                                <span class="response-answer"></span>
+                            </div>
+                            <button class="btn btn__warning response_btn" type="button">Закрыть</button>
+                        </div>
+                    </div>
                 </form>
             </div>
         </section>
-
+        
         <section class="section section__contacts" id="contacts">
         </section>
     </main>
@@ -367,7 +724,7 @@
 
                 <li class="footer__item">
                     <img src="images/icons/phone.svg" alt="" class="phone__img">
-                    <span class="orange">+7 (995) 780-96-50</span>
+                    <a href='tel:79957809650' class="orange">+7 (995) 780-96-50</a>
                 </li>
             </ul>
 
