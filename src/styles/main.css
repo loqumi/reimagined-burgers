@@ -174,14 +174,6 @@ h5 {
         font-size: 12px;
     }
 
-    .menu__container {
-        justify-content: end;
-    }
-
-    .menu__container h1 {
-        position: absolute;
-    }
-
     .food__item h2 {
         font-size: 1.5rem;
     }
@@ -340,14 +332,6 @@ h5 {
    
     html {
         font-size: 13px;
-    }
-
-    .menu__container {
-        justify-content: space-between;
-    }
-
-    .menu__container h1 {
-        position: relative;
     }
 
     .food__item h2 {
