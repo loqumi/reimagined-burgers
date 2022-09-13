@@ -4,7 +4,7 @@
 
 .sidebar{
     position: fixed;
-    top: 40vh;
+    top: 40%;
     right: 3vw;
     z-index: 1;
 }
@@ -15,7 +15,8 @@
     vertical-align: 100%;
 }
 
-.dot_item{
+.dot_item {
+    transition: 0.9s;
     height: 8px;
     width: 8px;
     padding: 0.40rem;
@@ -24,6 +25,15 @@
     margin: 0.6rem;
 }
 
-.dot_item:hover{
+.dot_item.active {
 box-shadow: 0 0 0 1px inset var(--white);
+}
+
+.dot_list.dark .dot_item {
+    background: black content-box;
+}
+
+.dot_item.dark.active {
+    background: black content-box;
+    box-shadow: 0 0 0 1px inset black;
 }

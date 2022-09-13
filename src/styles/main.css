@@ -27,8 +27,13 @@ p {
 }
 
 body {
+    overflow: hidden;
     font-family: Ubuntu, serif;
     color: var(--white);
+}
+
+.wrapper-body {
+    transition: 0.3s;
 }
 
 body.lock {
