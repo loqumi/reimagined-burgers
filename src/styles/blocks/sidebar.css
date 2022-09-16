@@ -16,7 +16,8 @@
 }
 
 .dot_item {
-    transition: 0.9s;
+    cursor: pointer;
+    transition: 1.3s;
     height: 8px;
     width: 8px;
     padding: 0.40rem;
@@ -26,14 +27,5 @@
 }
 
 .dot_item.active {
-box-shadow: 0 0 0 1px inset var(--white);
-}
-
-.dot_list.dark .dot_item {
-    background: black content-box;
-}
-
-.dot_item.dark.active {
-    background: black content-box;
-    box-shadow: 0 0 0 1px inset black;
+    box-shadow: 0 0 0 1px inset var(--white);
 }

@@ -33,7 +33,7 @@ body {
 }
 
 .wrapper-body {
-    transition: 0.3s;
+    transition: 1.3s;
 }
 
 body.lock {
@@ -118,7 +118,6 @@ textarea:focus{
 
 .section {
     height: 100vh;
-    min-height: 896px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -457,5 +456,12 @@ h5 {
 
     .burger_img{
         width: 600px;
+    }
+}
+
+@media (max-width: 768px){
+    
+    .section {
+        min-height: 896px;
     }
 }
