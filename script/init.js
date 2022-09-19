@@ -1,4 +1,5 @@
 import {set_active} from './utils.js';
+import "./swipe.js";
 
 document.addEventListener('DOMContentLoaded', FN)
 window.addEventListener('popstate', FN)
@@ -36,28 +37,19 @@ document.addEventListener("wheel",(event) => {
     }, 1300)
 })
 
-let posX = 0;
-let posY = 0;
-var touchflag = false;
 
-document.addEventListener('touchmove', event => {
-    if (touchflag) return;
-    touchflag = true
-    const { clientX, clientY } = event.touches[0];
+$(window).onSwipe(function(results){
+
+    let hash = null;
+    
     const current_section_index = get_current_section_index();
-  
-    if (posY < clientY) {
-        const hash = sections[current_section_index + 1]?.id;
-        if (hash) window.location.hash = hash;
-    } else {
-        const hash = sections[current_section_index - 1]?.id;
-        if (hash) window.location.hash = hash;
-    }
-  
-    posX = clientX;
-    posY = clientY;
+    
+    if(results.up == true) 
+        hash = sections[current_section_index + 1]?.id;
+    
 
-    setTimeout(() => {
-        touchflag = false;
-    }, 1300)
-})
+    if(results.down == true) 
+        hash = sections[current_section_index - 1]?.id;
+        
+    if (hash) window.location.hash = hash;
+  });
