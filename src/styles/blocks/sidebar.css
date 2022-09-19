@@ -9,6 +9,12 @@
     z-index: 1;
 }
 
+.dot_item a {
+    text-align: center;
+    font-size: 15px;
+    color: transparent;
+}
+
 .dot_list{
     flex-direction: column;
     justify-content: space-between;

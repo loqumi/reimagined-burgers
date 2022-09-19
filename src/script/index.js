@@ -4,7 +4,6 @@ import './init.js';
 import './map.js';
 import './menu.js';
 import './order.js';
-import './scroll.js';
 import './sidebar.js';
 import './slider.js';
 import './team.js';
