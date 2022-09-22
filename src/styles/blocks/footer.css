@@ -2,6 +2,7 @@
     background: url("../../images/bg/footer.png") center center / cover no-repeat;
     width: 100%;
     position: absolute;
+    transform: translateY(-64px);
 }
 
 .footer__list:last-child{

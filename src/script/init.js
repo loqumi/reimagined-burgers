@@ -3,10 +3,11 @@ import "./swipe.js";
 
 document.addEventListener('DOMContentLoaded', FN)
 window.addEventListener('popstate', FN)
+const sections = document.querySelectorAll(".section");
 
 function get_current_section_index() {
     const href = window.location.hash;
-    let elem = document.querySelector(href);
+    const elem = href ? document.querySelector(href) : sections[0];
 
     return Array.from(elem.parentElement.children).indexOf(elem);
 }
@@ -15,9 +16,7 @@ function FN() {
     set_active(get_current_section_index());
 }
 
-const sections = document.querySelectorAll(".section");
 var flag = false;
-
 
 document.addEventListener("wheel",(event) => {
     if (flag) return;
