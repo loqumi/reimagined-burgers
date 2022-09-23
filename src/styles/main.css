@@ -27,8 +27,13 @@ p {
 }
 
 body {
+    overflow: hidden;
     font-family: Ubuntu, serif;
     color: var(--white);
+}
+
+.wrapper-body {
+    transition: 1.3s;
 }
 
 body.lock {
@@ -42,7 +47,12 @@ body.lock {
     border-radius: 0.5rem;
 }
 
-.btn.menu__burger{
+.btn.menu__burger {
+    padding-left: 0px;
+    padding-right: 20px;
+}
+
+.btn.exit__btn {
     padding-left: 0px;
     padding-right: 20px;
 }
@@ -74,7 +84,7 @@ label:first-letter {
     text-transform: uppercase;
 }
 
-input {
+input.input {
     margin-top: 0.33rem;
     padding: 0.33rem;
     border-radius: 0.4rem;
@@ -83,7 +93,7 @@ input {
     border: 0.13rem transparent solid;
 }
 
-input:focus{
+input.input:focus{
     border: 0.13rem solid var(--title);
 }
 
@@ -108,7 +118,6 @@ textarea:focus{
 
 .section {
     height: 100vh;
-    min-height: 896px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -158,10 +167,19 @@ h5 {
     color: var(--black);
 }
 
+.section__menu {
+    justify-content: unset;
+    align-items: unset;
+}
+
 @media (min-width: 1px){
 
     html {
         font-size: 12px;
+    }
+
+    .food__item h2 {
+        font-size: 1.5rem;
     }
 
     .consist {
@@ -320,6 +338,10 @@ h5 {
         font-size: 13px;
     }
 
+    .food__item h2 {
+        font-size: 2.5rem;
+    }
+
     .consist {
         width: 250px;
         height: 360px;
@@ -434,5 +456,12 @@ h5 {
 
     .burger_img{
         width: 600px;
+    }
+}
+
+@media (max-width: 768px){
+    
+    .section {
+        min-height: 710px;
     }
 }

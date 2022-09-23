@@ -6,49 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=3bb7edcf-0936-4b5e-a3c6-775bb46bc5af" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>reimagined-burgers</title>
 </head>
 <body>
-    <header class="header">
-        <div class="container header__container">
-            <img src="images/icons/logo.svg" alt="logo" class="header__logo">
-            <nav class="header__nav">
-                <ul class="list header__list">
-                    <li class="list__item">
-                        <a href="#about">о нас</a>
-                    </li>
-
-                    <li class="list__item">
-                        <a href="#burgers">бургеры</a>
-                    </li>
-
-                    <li class="list__item">
-                        <a href="#team" >команда</a>
-                    </li>
-
-                    <li class="list__item">
-                        <a>меню</a>
-                    </li>
-
-                    <li class="list__item">
-                        <a href="#feedback">отзывы</a>
-                    </li>
-
-                    <li class="list__item">
-                        <a>как мы работаем</a>
-                    </li>
-
-                    <li class="list__item">
-                        <a href="#contacts">контакты</a>
-                    </li>
-                </ul>
-            </nav>
-            
-            <a href="#order" class="btn header__btn btn__warning">
-                заказать
-            </a>
-        </div>
-    </header>
 
     <div class="menu">
         <button id="humburger__btn" class="btn menu__burger btn__transparent">
@@ -65,11 +27,11 @@
                 </li>
 
                 <li class="menu__item">
-                    <a href="#">команда</a>
+                    <a href="#team">команда</a>
                 </li>
 
                 <li class="menu__item">
-                    <a href="#">меню</a>
+                    <a href="#menu">меню</a>
                 </li>
 
                 <li class="menu__item">
@@ -77,7 +39,7 @@
                 </li>
 
                 <li class="menu__item">
-                    <a href="#">как мы работаем</a>
+                    <a href="#how-we-work">как мы работаем</a>
                 </li>
 
                 <li class="menu__item">
@@ -87,674 +49,802 @@
         </nav>
     </div>
 
-    <aside class="sidebar">
+    <div class="wrapper-body">
+        
+        <header class="header">
+            <div class="container header__container">
+                <img src="images/icons/logo.svg" alt="logo" class="header__logo">
+                <nav class="header__nav">
+                    <ul class="list header__list">
+                        <li class="list__item">
+                            <a href="#about">о нас</a>
+                        </li>
+    
+                        <li class="list__item">
+                            <a href="#burgers">бургеры</a>
+                        </li>
+    
+                        <li class="list__item">
+                            <a href="#team" >команда</a>
+                        </li>
+    
+                        <li class="list__item">
+                            <a href="#menu">меню</a>
+                        </li>
+    
+                        <li class="list__item">
+                            <a href="#feedback">отзывы</a>
+                        </li>
+    
+                        <li class="list__item">
+                            <a href="#how-we-work">как мы работаем</a>
+                        </li>
+    
+                        <li class="list__item">
+                            <a href="#contacts">контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+    
+                <a href="#order" class="btn header__btn btn__warning">
+                    заказать
+                </a>
+            </div>
+        </header>
+    
+        <main class="main">
+    
+            <section class="section section__preview" id="preview">
+                <div class="container preview__container">
+                    <div class="preview__image">
+                        <img src="images/icons/burger.png" alt="burger" class="preview__image-burger">
+                    </div>
+                    <div class="preview__description">
+                        <h1 class="section__title">мы делаем</h1>
+                        <h2 class="section__subtitle">натуральные бургеры</h2>
+                    </div>
+                </div>
+                <a href="#about" class="btn btn__arrow-down">
+                    <img src="images/icons/arrow-scroll.svg" alt="arrow-scroll" class="arrow-scroll-down">
+                </a>
+            </section>
+    
+            <section class="section section__about" id="about">
+                <div class="container about__container">
+                    <h1 class="section__title">мы лучшие</h1>
+                    <div class="cards__wrapper">
+                        <div class="cards__item">
+                            <img class="cards__item-icon" src="images/icons/meat.svg" alt="meat">
+                            <div>
+                                <h3 class="section__subtitle">100% свежее мясо</h3>
+                                <p class="card__item-text">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб неравномерен.</p>
+                            </div>
+                        </div>
+    
+                        <div class="cards__item">
+                            <img class="cards__item-icon hand" src="images/icons/hand.svg" alt="meat">
+                            <div>
+                                <h3 class="section__subtitle">Ручная сборка</h3>
+                                <p class="card__item-text">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Первое полустишие притягивает сюжетный реформаторский пафос.</p>
+                            </div>
+                        </div>
+    
+                        <div class="cards__item">
+                            <img class="cards__item-icon" src="images/icons/natural.svg" alt="meat">
+                            <div>
+                                <h3 class="section__subtitle">Натуральные ингредиенты</h3>
+                                <p class="card__item-text">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <section class="section section__slider" id="burgers">
+                <button class="btn btn__transparent btn__arrow-left slider">
+                    <img src="images/icons/arrow-scroll.svg"
+                    alt="arrow-scroll-left"
+                    class="arrow-scroll-left">
+                </button>
+    
+                <div class="container slider__container">
+                    <ul class="slider__list list">
+                        <li class="list__item-burger">
+                            <div class="slider__item-header">
+                                <div class="burger-btns">
+                                    <button class="btn btn__warning consist__btn">
+                                        <img src="images/icons/burger.svg" alt="burger">
+                                        <span>Состав</span>
+                                        <div class="consist">
+                                            <div class="consist__list-item">
+                                                <img src="images/icons/beef.svg" alt="beef">
+                                                <span class="consist-name">Говядина</span>
+                                                <span>300г</span>
+                                            </div>
+                                            <div class="consist__list-item">
+                                                <img src="images/icons/buns.svg" alt="buns">
+                                                <span>Булочки</span>
+                                                <span>100г</span>
+                                            </div>
+                                            <div class="consist__list-item">
+                                                <img src="images/icons/salad.svg" alt="salad">
+                                                <span>Зелень</span>
+                                                <span>70г</span>
+                                            </div>
+                                            <div class="consist__list-item">
+                                                <img src="images/icons/sauce.svg" alt="sauce">
+                                                <span>Соус</span>
+                                                <span>150г</span>
+                                            </div>
+                                            <div class="consist__list-item">
+                                                <img src="images/icons/cucumber.svg" alt="cucumber">
+                                                <span>Овощи</span>
+                                                <span>200г</span>
+                                            </div>
+                                            <div class="consist__list-item">
+                                                <img src="images/icons/cheese.svg" alt="cheese">
+                                                <span>Сыр</span>
+                                                <span>80г</span>
+                                            </div>
+                                        </div>
+                                    </button>
+    
+                                    <button class="btn btn__transparent" disabled>
+                                        <img src="images/icons/kkal.svg" alt="kkal">
+                                        <span class="count">1200</span>
+                                        <span>ккал</span>
+                                    </button>
+                                </div>
+    
+                                <img class="burger_img" src="images/burgers-slider/Dark beef burger.png" alt="dark-beef-burger">
+    
+                            </div>
+                            <div class="slider__item-body">
+                                <h1 class="section__title burger__title">Dark Beef Burger</h1>
+                                <p class="slider-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor perferendis eum fugiat ducimus sunt sint culpa laboriosam aliquid doloribus. Similique, voluptatem natus! Nostrum eum, quasi quia dicta aut optio accusamus!</p>
+    
+                                <div class="slider__item-block">
+                                    <span class="warning">500</span>
+                                    <span class="warning">рублей</span>
+                                    <a href="#order" class="btn btn__warning">
+                                        заказать
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list__item-burger">
+                            <div class="slider__item-header">
+                                <div class="burger-btns">
+                                    <button class="btn btn__warning consist__btn">
+                                        <img src="images/icons/burger.svg" alt="burger">
+                                        <span>Состав</span>
+                                        <div class="consist">
+                                            <div class="consist__list-item">
+                                                <img src="images/icons/beef.svg" alt="beef">
+                                                <span class="consist-name">Говядина</span>
+                                                <span>300г</span>
+                                            </div>
+                                            <div class="consist__list-item">
+                                                <img src="images/icons/buns.svg" alt="buns">
+                                                <span>Булочки</span>
+                                                <span>100г</span>
+                                            </div>
+                                            <div class="consist__list-item">
+                                                <img src="images/icons/salad.svg" alt="salad">
+                                                <span>Зелень</span>
+                                                <span>70г</span>
+                                            </div>
+                                            <div class="consist__list-item">
+                                                <img src="images/icons/sauce.svg" alt="sauce">
+                                                <span>Соус</span>
+                                                <span>150г</span>
+                                            </div>
+                                            <div class="consist__list-item">
+                                                <img src="images/icons/cucumber.svg" alt="cucumber">
+                                                <span>Овощи</span>
+                                                <span>200г</span>
+                                            </div>
+                                            <div class="consist__list-item">
+                                                <img src="images/icons/cheese.svg" alt="cheese">
+                                                <span>Сыр</span>
+                                                <span>80г</span>
+                                            </div>
+                                        </div>
+                                    </button>
+    
+                                    <button class="btn btn__transparent" disabled>
+                                        <img src="images/icons/kkal.svg" alt="kkal">
+                                        <span class="count">1200</span>
+                                        <span>ккал</span>
+                                    </button>
+                                </div>
+    
+                                <img class="burger_img" src="images/burgers-slider/burger_sandwich_PNG4124.png" alt="dark-beef-burger">
+    
+                            </div>
+                            <div class="slider__item-body">
+                                <h1 class="section__title burger__title">Dark Beef Burger</h1>
+                                <p class="slider-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor perferendis eum fugiat ducimus sunt sint culpa laboriosam aliquid doloribus. Similique, voluptatem natus! Nostrum eum, quasi quia dicta aut optio accusamus!</p>
+    
+                                <div class="slider__item-block">
+                                    <span class="warning">500</span>
+                                    <span class="warning">рублей</span>
+                                    <a href="#order" class="btn btn__warning">
+                                        заказать
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list__item-burger">
+                            <div class="slider__item-header">
+                                <div class="burger-btns">
+                                    <button class="btn btn__warning consist__btn">
+                                        <img src="images/icons/burger.svg" alt="burger">
+                                        <span>Состав</span>
+                                        <div class="consist">
+                                            <div class="consist__list-item">
+                                                <img src="images/icons/beef.svg" alt="beef">
+                                                <span class="consist-name">Говядина</span>
+                                                <span>300г</span>
+                                            </div>
+                                            <div class="consist__list-item">
+                                                <img src="images/icons/buns.svg" alt="buns">
+                                                <span>Булочки</span>
+                                                <span>100г</span>
+                                            </div>
+                                            <div class="consist__list-item">
+                                                <img src="images/icons/salad.svg" alt="salad">
+                                                <span>Зелень</span>
+                                                <span>70г</span>
+                                            </div>
+                                            <div class="consist__list-item">
+                                                <img src="images/icons/sauce.svg" alt="sauce">
+                                                <span>Соус</span>
+                                                <span>150г</span>
+                                            </div>
+                                            <div class="consist__list-item">
+                                                <img src="images/icons/cucumber.svg" alt="cucumber">
+                                                <span>Овощи</span>
+                                                <span>200г</span>
+                                            </div>
+                                            <div class="consist__list-item">
+                                                <img src="images/icons/cheese.svg" alt="cheese">
+                                                <span>Сыр</span>
+                                                <span>80г</span>
+                                            </div>
+                                        </div>
+                                    </button>
+    
+                                    <button class="btn btn__transparent" disabled>
+                                        <img src="images/icons/kkal.svg" alt="kkal">
+                                        <span class="count">1200</span>
+                                        <span>ккал</span>
+                                    </button>
+                                </div>
+    
+                                <img class="burger_img" src="images/burgers-slider/Chiken burger.png" alt="dark-beef-burger">
+    
+                            </div>
+                            <div class="slider__item-body">
+                                <h1 class="section__title burger__title">Dark Beef Burger</h1>
+                                <p class="slider-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor perferendis eum fugiat ducimus sunt sint culpa laboriosam aliquid doloribus. Similique, voluptatem natus! Nostrum eum, quasi quia dicta aut optio accusamus!</p>
+    
+                                <div class="slider__item-block">
+                                    <span class="warning">500</span>
+                                    <span class="warning">рублей</span>
+                                    <a href="#order" class="btn btn__warning">
+                                        заказать
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list__item-burger">
+                            <div class="slider__item-header">
+                                <div class="burger-btns">
+                                    <button class="btn btn__warning consist__btn">
+                                        <img src="images/icons/burger.svg" alt="burger">
+                                        <span>Состав</span>
+                                        <div class="consist">
+                                            <div class="consist__list-item">
+                                                <img src="images/icons/beef.svg" alt="beef">
+                                                <span class="consist-name">Говядина</span>
+                                                <span>300г</span>
+                                            </div>
+                                            <div class="consist__list-item">
+                                                <img src="images/icons/buns.svg" alt="buns">
+                                                <span>Булочки</span>
+                                                <span>100г</span>
+                                            </div>
+                                            <div class="consist__list-item">
+                                                <img src="images/icons/salad.svg" alt="salad">
+                                                <span>Зелень</span>
+                                                <span>70г</span>
+                                            </div>
+                                            <div class="consist__list-item">
+                                                <img src="images/icons/sauce.svg" alt="sauce">
+                                                <span>Соус</span>
+                                                <span>150г</span>
+                                            </div>
+                                            <div class="consist__list-item">
+                                                <img src="images/icons/cucumber.svg" alt="cucumber">
+                                                <span>Овощи</span>
+                                                <span>200г</span>
+                                            </div>
+                                            <div class="consist__list-item">
+                                                <img src="images/icons/cheese.svg" alt="cheese">
+                                                <span>Сыр</span>
+                                                <span>80г</span>
+                                            </div>
+                                        </div>
+                                    </button>
+    
+                                    <button class="btn btn__transparent" disabled>
+                                        <img src="images/icons/kkal.svg" alt="kkal">
+                                        <span class="count">1200</span>
+                                        <span>ккал</span>
+                                    </button>
+                                </div>
+    
+                                <img class="burger_img" src="images/burgers-slider/NYC-Diner-Bacon-Cheeseburger.png" alt="dark-beef-burger">
+    
+                            </div>
+                            <div class="slider__item-body">
+                                <h1 class="section__title burger__title">Dark Beef Burger</h1>
+                                <p class="slider-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor perferendis eum fugiat ducimus sunt sint culpa laboriosam aliquid doloribus. Similique, voluptatem natus! Nostrum eum, quasi quia dicta aut optio accusamus!</p>
+    
+                                <div class="slider__item-block">
+                                    <span class="warning">500</span>
+                                    <span class="warning">рублей</span>
+                                    <a href="#order" class="btn btn__warning">
+                                        заказать
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list__item-burger">
+                            <div class="slider__item-header">
+                                <div class="burger-btns">
+                                    <button class="btn btn__warning consist__btn">
+                                        <img src="images/icons/burger.svg" alt="burger">
+                                        <span>Состав</span>
+                                        <div class="consist">
+                                            <div class="consist__list-item">
+                                                <img src="images/icons/beef.svg" alt="beef">
+                                                <span class="consist-name">Говядина</span>
+                                                <span>300г</span>
+                                            </div>
+                                            <div class="consist__list-item">
+                                                <img src="images/icons/buns.svg" alt="buns">
+                                                <span>Булочки</span>
+                                                <span>100г</span>
+                                            </div>
+                                            <div class="consist__list-item">
+                                                <img src="images/icons/salad.svg" alt="salad">
+                                                <span>Зелень</span>
+                                                <span>70г</span>
+                                            </div>
+                                            <div class="consist__list-item">
+                                                <img src="images/icons/sauce.svg" alt="sauce">
+                                                <span>Соус</span>
+                                                <span>150г</span>
+                                            </div>
+                                            <div class="consist__list-item">
+                                                <img src="images/icons/cucumber.svg" alt="cucumber">
+                                                <span>Овощи</span>
+                                                <span>200г</span>
+                                            </div>
+                                            <div class="consist__list-item">
+                                                <img src="images/icons/cheese.svg" alt="cheese">
+                                                <span>Сыр</span>
+                                                <span>80г</span>
+                                            </div>
+                                        </div>
+                                    </button>
+    
+                                    <button class="btn btn__transparent" disabled>
+                                        <img src="images/icons/kkal.svg" alt="kkal">
+                                        <span class="count">1200</span>
+                                        <span>ккал</span>
+                                    </button>
+                                </div>
+    
+                                <img class="burger_img" src="images/burgers-slider/Spicy_Shrimp_Burger.png" alt="dark-beef-burger">
+    
+                            </div>
+                            <div class="slider__item-body">
+                                <h1 class="section__title burger__title">Dark Beef Burger</h1>
+                                <p class="slider-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor perferendis eum fugiat ducimus sunt sint culpa laboriosam aliquid doloribus. Similique, voluptatem natus! Nostrum eum, quasi quia dicta aut optio accusamus!</p>
+    
+                                <div class="slider__item-block">
+                                    <span class="warning">500</span>
+                                    <span class="warning">рублей</span>
+                                    <a href="#order" class="btn btn__warning">
+                                        заказать
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+    
+                <button class="btn btn__transparent btn__arrow-right slider">
+                    <img src="images/icons/arrow-scroll.svg"
+                    alt="arrow-scroll-right"
+                    class="arrow-scroll-right">
+                </button>
+            </section>
+    
+            <section class="section section__team" id="team">
+                <div class="container team__container">
+                    <h1 class="section__title">команда</h1>
+    
+                    <div class="card__name">
+                        <button class="btn btn__transparent accordion">
+                            <div class= "triangle"></div>
+                            <h4>Дэенил Редклиф</h4>
+                        </button>
+                        <div class="card__name-about">
+                            <img src="images/icons/aphex.png" alt="man" class="round">
+                            <div class="card__name-text">
+                                <h5>Оператор</h5>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita, blanditiis?</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="card__name">
+                        <button class="btn btn__transparent accordion">
+                            <div class= "triangle"></div>
+                            <h4>Дэенил Редклиф</h4>
+                        </button>
+                        <div class="card__name-about">
+                            <img src="images/icons/aphex.png" alt="man" class="round">
+                            <div class="card__name-text">
+                                <h5>Оператор</h5>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita, blanditiis?</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="card__name">
+                        <button class="btn btn__transparent accordion">
+                            <div class= "triangle"></div>
+                            <h4>Дэенил Редклиф</h4>
+                        </button>
+                        <div class="card__name-about">
+                            <img src="images/icons/aphex.png" alt="man" class="round">
+                            <div class="card__name-text">
+                                <h5>Оператор</h5>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita, blanditiis?</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="card__name">
+                        <button class="btn btn__transparent accordion">
+                            <div class= "triangle"></div>
+                            <h4>Дэенил Редклиф</h4>
+                        </button>
+                        <div class="card__name-about">
+                            <img src="images/icons/aphex.png" alt="man" class="round">
+                            <div class="card__name-text">
+                                <h5>Оператор</h5>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita, blanditiis?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <section class="section section__menu" id="menu">
+                <div class="menu__container">
+                    <h1 class="section__title"> меню</h1>
+    
+                    <ul class="menu__food">
+                        <li class="food__item food-pic1">
+                            <div class="food_menu-item">
+                                <h2>для мясоедов</h2>
+                            </div>
+                        </li>
+                        <li class="food_menu-text">
+                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quae quibusdam ducimus ex? Veniam, laudantium fugiat hic cum culpa, quaerat debitis veritatis ut amet animi fuga excepturi ratione beatae est? Culpa officia esse error architecto possimus earum iure minima! Saepe inventore fuga reiciendis consequatur. Soluta architecto magnam similique vel corporis.</span>
+                            <button class="btn btn__transparent exit__btn"><span></span>
+                            </button>
+                        </li>
+                        <li class="food__item food-pic2">
+                            <div class="food_menu-item">
+                                <h2>вегетарианское</h2>
+                            </div>
+                        </li>
+                        <li class="food_menu-text">
+                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quae quibusdam ducimus ex? Veniam, laudantium fugiat hic cum culpa, quaerat debitis veritatis ut amet animi fuga excepturi ratione beatae est? Culpa officia esse error architecto possimus earum iure minima! Saepe inventore fuga reiciendis consequatur. Soluta architecto magnam similique vel corporis.</span>
+                            <button class="btn btn__transparent exit__btn"><span></span>
+                            </button>
+                        </li>
+                        <li class="food__item food-pic3">
+                            <div class="food_menu-item">
+                                <h2>диетическое</h2>
+                            </div>
+                        </li>
+                        <li class="food_menu-text">
+                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quae quibusdam ducimus ex? Veniam, laudantium fugiat hic cum culpa, quaerat debitis veritatis ut amet animi fuga excepturi ratione beatae est? Culpa officia esse error architecto possimus earum iure minima! Saepe inventore fuga reiciendis consequatur. Soluta architecto magnam similique vel corporis.</span>
+                            <button class="btn btn__transparent exit__btn"><span></span>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+    
+            <section class="section section__feedback" id="feedback">
+                <div class="feedback-card">
+                    <div class="feedback-card__content">
+                        <h5 class="section__title">константин спилберг</h5>
+                        <p class="feedback__text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+                        <button class="btn btn__secondary">подробнее</button>
+                        <button class="btn btn__mobile_vers">читать отзыв</button>
+                    </div>
+                    <img src="images/feedback/feedback1.png" alt="" class="feedback-card__background">
+                </div>
+                <div class="feedback-card">
+                    <div class="feedback-card__content">
+                        <h5 class="section__title">константин спилберг</h5>
+                        <p class="feedback__text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+                        <button class="btn btn__secondary">подробнее</button>
+                        <button class="btn btn__mobile_vers">читать отзыв</button>
+                    </div>
+                    <img src="images/feedback/feedback2.png" alt="" class="feedback-card__background">
+                </div>
+                <div class="feedback-card">
+                    <div class="feedback-card__content">
+                        <h5 class="section__title">константин спилберг</h5>
+                        <p class="feedback__text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+                        <button class="btn btn__secondary">подробнее</button>
+                        <button class="btn btn__mobile_vers">читать отзыв</button>
+                    </div>
+                    <img src="images/feedback/feedback3.png" alt="" class="feedback-card__background">
+                </div>
+                <div class="feedback-card">
+                    <div class="feedback-card__content">
+                        <h5 class="section__title">константин спилберг</h5>
+                        <p class="feedback__text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+                        <button class="btn btn__secondary">подробнее</button>
+                        <button class="btn btn__mobile_vers">читать отзыв</button>
+                    </div>
+                    <img src="images/feedback/feedback4.png" alt="" class="feedback-card__background">
+                </div>
+                <div class="feedback-card">
+                    <div class="feedback-card__content">
+                        <h5 class="section__title">константин спилберг</h5>
+                        <p class="feedback__text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+                        <button class="btn btn__secondary">подробнее</button>
+                        <button class="btn btn__mobile_vers">читать отзыв</button>
+                    </div>
+                    <img src="images/feedback/feedback5.png" alt="" class="feedback-card__background">
+                </div>
+                <div class="feedback-card">
+                    <div class="feedback-card__content">
+                        <h5 class="section__title">константин спилберг</h5>
+                        <p class="feedback__text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+                        <button class="btn btn__secondary">подробнее</button>
+                        <button class="btn btn__mobile_vers">читать отзыв</button>
+                    </div>
+                    <img src="images/feedback/feedback6.png" alt="" class="feedback-card__background">
+                </div>
+                <div class="feedback-card">
+                    <div class="feedback-card__content">
+                        <h5 class="section__title">константин спилберг</h5>
+                        <p class="feedback__text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+                        <button class="btn btn__secondary">подробнее</button>
+                        <button class="btn btn__mobile_vers">читать отзыв</button>
+                    </div>
+                    <img src="images/feedback/feedback7.png" alt="" class="feedback-card__background">
+                </div>
+                <div class="feedback-card">
+                    <div class="feedback-card__content">
+                        <h5 class="section__title">константин спилберг</h5>
+                        <p class="feedback__text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+                        <button class="btn btn__secondary">подробнее</button>
+                        <button class="btn btn__mobile_vers">читать отзыв</button>
+                    </div>
+                    <img src="images/feedback/feedback8.png" alt="" class="feedback-card__background">
+                </div>
+            </section>
+    
+            <section class="section section__how-we-work" id="how-we-work">
+                <div class="container how-we-work__container">
+                    <h1 class="section__title">как мы работаем</h1>
+                    <div class="c-video" id="video_player">
+                        <video class="video" src="images/video/video.mp4" poster="images/video/poster.png" id="main_video"></video>
+                        <div class="controls">
+                            <div class="progress-area">
+                                <div class="progress-bar">
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="play_pause">
+                                <img class="play" id="play-pause" src="images/icons/play.svg" alt="">
+                            </div>
+                            <span class="volume">
+                                <img src="images/icons/volume.svg" class="volume">
+                                <input type="range" min="0" max="100" class="volume_range">
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <section class="section section__order" id="order">
+                <div class="container container__order">
+                    <h1 class="section__title">закажите доставку</h1>
+    
+                    <form action="#" class="order__form">
+                        <div class="order__form-address">
+                            <div class="form__row">
+                                <div class="input__wrapper wrapper">
+                                    <label for="name">имя</label>
+                                    <input type="text" id="name" name="name" class="input" required>
+                                    <div class="error"></div>
+                                </div>
+                                <div class="input__wrapper wrapper">
+                                    <label for="phone">телефон</label>
+                                    <input type="text" id="phone" name="phone" class="input" required>
+                                    <div class="error"></div>
+                                </div>
+                            </div>
+                            <div class="form__row">
+                                <div class="input__wrapper wrapper">
+                                    <label for="street">улица</label>
+                                    <input type="text" id="street" name="street" class="input">
+                                </div>
+                            </div>
+                            <div class="form__row">
+                                <div class="input__wrapper wrapper">
+                                    <label for="house">дом</label>
+                                    <input type="text" id="house" name="house" class="input">
+                                </div>
+                                <div class="input__wrapper wrapper">
+                                    <label for="entrance">корпус</label>
+                                    <input type="text" id="entrance" name="entrance" class="input">
+                                </div>
+                                <div class="input__wrapper wrapper">
+                                    <label for="flat">квартира</label>
+                                    <input type="text" id="flat" name="flat" class="input">
+                                </div>
+                                <div class="input__wrapper wrapper">
+                                    <label for="level">этаж</label>
+                                    <input type="text" id="level" name="level" class="input">
+                                </div>
+                            </div>
+    
+                        </div>
+                        <div class="order__form-comment">
+                            <div class="form__row">
+                                <div class="input__wrapper wrapper">
+                                    <label for="comment">комментарий</label>
+                                    <textarea id="comment" class="input" name="comment" required></textarea>
+                                    <div class="error"></div>
+                                </div>
+                            </div>
+    
+                            <div class="form__row__buttons">
+                                <div class="input__wrapper--radio">
+                                    <label class="textformat" for="need">Нужна сдача</label>
+                                    <input class="buttom__format" type="radio" id="need" name="payment">
+                                </div>
+    
+                                <div class="input__wrapper--radio">
+                                    <label class="textformat" for="notNeed">По карте</label>
+                                    <input class="buttom__format" type="radio" id="notNeed" name="payment">
+                                </div>
+                            </div>
+    
+                            <div class="form__row__buttons">
+                                <div class="input__wrapper--checkbox">
+                                    <label class="textformat" for="recall">Не звоните мне</label>
+                                    <input class="buttom__format" type="checkbox" id="recall" name="recall">
+                                </div>
+                            </div>
+    
+                            <div class="form__row">
+                                <button class="btn order__btn btn__warning">
+                                    заказать
+                                </button>
+    
+                                <button class="btn btn__transparent" type="reset">очистить</button>
+                            </div>
+                        </div>
+                        <div class="response__order">
+                            <div class="response__window">
+                                <div class="response__text">
+                                    <span class="response-answer"></span>
+                                </div>
+                                <button class="btn btn__warning response_btn" type="button">Закрыть</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+    
+            <section class="section section__contacts" id="contacts">
+            </section>
+        </main>
+    
+        <footer class="footer">
+            <div class="container footer__container">
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <span>Санкт-Петербург, ул.Бабушкина, д.12/1, 15</span>
+                    </li>
+    
+                    <li class="footer__item">
+                        <img src="images/icons/phone.svg" alt="" class="phone__img">
+                        <a href='tel:79957809650' class="orange">+7 (995) 780-96-50</a>
+                    </li>
+                </ul>
+    
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a href="#">
+                            <img class="footer__img" src="images/icons/vk.svg" alt="vk">
+                        </a>
+                    </li>
+    
+                    <li class="footer__item">
+                        <a href="#">
+                            <img class="footer__img" src="images/icons/fb.svg" alt="fb">
+                        </a>
+                    </li>
+    
+                    <li class="footer__item">
+                        <a href="#">
+                            <img class="footer__img" src="images/icons/inst.svg" alt="inst">
+                        </a>
+                    </li>
+    
+                    <li class="footer__item">
+                        <a href="#">
+                            <img class="footer__img" src="images/icons/twitter.svg" alt="tw">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+ 
+    <aside class="sidebar" id="sidebar">
         <nav class="dot_nav">
             <ul class="list dot_list">
-                <li class="dot_item"></li>
-                <li class="dot_item"></li>
-                <li class="dot_item"></li>
-                <li class="dot_item"></li>
-                <li class="dot_item"></li>
-                <li class="dot_item"></li>
+                <li class="dot_item active">
+                    <a href="#preview">x</a>
+                </li>
+                <li class="dot_item">
+                    <a href="#about">x</a>
+                </li>
+                <li class="dot_item">
+                    <a href="#burgers">x</a>
+                </li>
+                <li class="dot_item">
+                    <a href="#team">x</a>
+                </li>
+                <li class="dot_item">
+                    <a href="#menu">x</a>
+                </li>
+                <li class="dot_item">
+                    <a href="#feedback">x</a>
+                </li>
+                <li class="dot_item">
+                    <a href="#how-we-work">x</a>
+                </li>
+                <li class="dot_item">
+                    <a href="#order">x</a>
+                </li>
+                <li class="dot_item">
+                    <a href="#contacts">x</a>
+                </li>
             </ul>
         </nav>
     </aside>
 
-    <main class="main">
-
-        <section class="section section__preview">
-            <div class="container preview__container">
-                <div class="preview__image">
-                    <img src="images/icons/burger.png" alt="burger" class="preview__image-burger">
-                </div>
-                <div class="preview__description">
-                    <h1 class="section__title">мы делаем</h1>
-                    <h2 class="section__subtitle">натуральные бургеры</h2>
-                </div>
-            </div>
-            <a href="#about" class="btn btn__arrow-down">
-                <img src="images/icons/arrow-scroll.svg" alt="arrow-scroll" class="arrow-scroll-down">
-            </a>
-        </section>
-
-        <section class="section section__about" id="about">
-            <div class="container about__container">
-                <h1 class="section__title">мы лучшие</h1>
-                <div class="cards__wrapper">
-                    <div class="cards__item">
-                        <img class="cards__item-icon" src="images/icons/meat.svg" alt="meat">
-                        <div>
-                            <h3 class="section__subtitle">100% свежее мясо</h3>
-                            <p class="card__item-text">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб неравномерен.</p>
-                        </div>
-                    </div>
-
-                    <div class="cards__item">
-                        <img class="cards__item-icon hand" src="images/icons/hand.svg" alt="meat">
-                        <div>
-                            <h3 class="section__subtitle">Ручная сборка</h3>
-                            <p class="card__item-text">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Первое полустишие притягивает сюжетный реформаторский пафос.</p>
-                        </div>
-                    </div>
-
-                    <div class="cards__item">
-                        <img class="cards__item-icon" src="images/icons/natural.svg" alt="meat">
-                        <div>
-                            <h3 class="section__subtitle">Натуральные ингредиенты</h3>
-                            <p class="card__item-text">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section section__slider" id="burgers">
-            <button class="btn btn__transparent btn__arrow-left slider">
-                <img src="images/icons/arrow-scroll.svg" 
-                alt="arrow-scroll-left" 
-                class="arrow-scroll-left">
-            </button>
-
-            <div class="container slider__container">
-                <ul class="slider__list list">
-                    <li class="list__item-burger">
-                        <div class="slider__item-header">
-                            <div class="burger-btns">
-                                <button class="btn btn__warning consist__btn">
-                                    <img src="images/icons/burger.svg" alt="burger">
-                                    <span>Состав</span>
-                                    <div class="consist">
-                                        <div class="consist__list-item">
-                                            <img src="images/icons/beef.svg" alt="beef">
-                                            <span class="consist-name">Говядина</span>
-                                            <span>300г</span>
-                                        </div>
-                                        <div class="consist__list-item">
-                                            <img src="images/icons/buns.svg" alt="buns">
-                                            <span>Булочки</span>
-                                            <span>100г</span>
-                                        </div>
-                                        <div class="consist__list-item">
-                                            <img src="images/icons/salad.svg" alt="salad">
-                                            <span>Зелень</span>
-                                            <span>70г</span>
-                                        </div>
-                                        <div class="consist__list-item">
-                                            <img src="images/icons/sauce.svg" alt="sauce">
-                                            <span>Соус</span>
-                                            <span>150г</span>
-                                        </div>
-                                        <div class="consist__list-item">
-                                            <img src="images/icons/cucumber.svg" alt="cucumber">
-                                            <span>Овощи</span>
-                                            <span>200г</span>
-                                        </div>
-                                        <div class="consist__list-item">
-                                            <img src="images/icons/cheese.svg" alt="cheese">
-                                            <span>Сыр</span>
-                                            <span>80г</span>
-                                        </div>
-                                    </div>
-                                </button>
-
-                                <button class="btn btn__transparent" disabled>
-                                    <img src="images/icons/kkal.svg" alt="kkal">
-                                    <span class="count">1200</span>
-                                    <span>ккал</span>
-                                </button>
-                            </div>
-
-                            <img class="burger_img" src="images/burgers-slider/Dark beef burger.png" alt="dark-beef-burger">
-
-                        </div>
-                        <div class="slider__item-body">
-                            <h1 class="section__title burger__title">Dark Beef Burger</h1>
-                            <p class="slider-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor perferendis eum fugiat ducimus sunt sint culpa laboriosam aliquid doloribus. Similique, voluptatem natus! Nostrum eum, quasi quia dicta aut optio accusamus!</p>
-
-                            <div class="slider__item-block">
-                                <span class="warning">500</span>
-                                <span class="warning">рублей</span>
-                                <a href="#order" class="btn btn__warning">
-                                    заказать
-                                </a>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="list__item-burger">
-                        <div class="slider__item-header">
-                            <div class="burger-btns">
-                                <button class="btn btn__warning consist__btn">
-                                    <img src="images/icons/burger.svg" alt="burger">
-                                    <span>Состав</span>
-                                    <div class="consist">
-                                        <div class="consist__list-item">
-                                            <img src="images/icons/beef.svg" alt="beef">
-                                            <span class="consist-name">Говядина</span>
-                                            <span>300г</span>
-                                        </div>
-                                        <div class="consist__list-item">
-                                            <img src="images/icons/buns.svg" alt="buns">
-                                            <span>Булочки</span>
-                                            <span>100г</span>
-                                        </div>
-                                        <div class="consist__list-item">
-                                            <img src="images/icons/salad.svg" alt="salad">
-                                            <span>Зелень</span>
-                                            <span>70г</span>
-                                        </div>
-                                        <div class="consist__list-item">
-                                            <img src="images/icons/sauce.svg" alt="sauce">
-                                            <span>Соус</span>
-                                            <span>150г</span>
-                                        </div>
-                                        <div class="consist__list-item">
-                                            <img src="images/icons/cucumber.svg" alt="cucumber">
-                                            <span>Овощи</span>
-                                            <span>200г</span>
-                                        </div>
-                                        <div class="consist__list-item">
-                                            <img src="images/icons/cheese.svg" alt="cheese">
-                                            <span>Сыр</span>
-                                            <span>80г</span>
-                                        </div>
-                                    </div>
-                                </button>
-
-                                <button class="btn btn__transparent" disabled>
-                                    <img src="images/icons/kkal.svg" alt="kkal">
-                                    <span class="count">1200</span>
-                                    <span>ккал</span>
-                                </button>
-                            </div>
-
-                            <img class="burger_img" src="images/burgers-slider/burger_sandwich_PNG4124.png" alt="dark-beef-burger">
-
-                        </div>
-                        <div class="slider__item-body">
-                            <h1 class="section__title burger__title">Dark Beef Burger</h1>
-                            <p class="slider-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor perferendis eum fugiat ducimus sunt sint culpa laboriosam aliquid doloribus. Similique, voluptatem natus! Nostrum eum, quasi quia dicta aut optio accusamus!</p>
-
-                            <div class="slider__item-block">
-                                <span class="warning">500</span>
-                                <span class="warning">рублей</span>
-                                <a href="#order" class="btn btn__warning">
-                                    заказать
-                                </a>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="list__item-burger">
-                        <div class="slider__item-header">
-                            <div class="burger-btns">
-                                <button class="btn btn__warning consist__btn">
-                                    <img src="images/icons/burger.svg" alt="burger">
-                                    <span>Состав</span>
-                                    <div class="consist">
-                                        <div class="consist__list-item">
-                                            <img src="images/icons/beef.svg" alt="beef">
-                                            <span class="consist-name">Говядина</span>
-                                            <span>300г</span>
-                                        </div>
-                                        <div class="consist__list-item">
-                                            <img src="images/icons/buns.svg" alt="buns">
-                                            <span>Булочки</span>
-                                            <span>100г</span>
-                                        </div>
-                                        <div class="consist__list-item">
-                                            <img src="images/icons/salad.svg" alt="salad">
-                                            <span>Зелень</span>
-                                            <span>70г</span>
-                                        </div>
-                                        <div class="consist__list-item">
-                                            <img src="images/icons/sauce.svg" alt="sauce">
-                                            <span>Соус</span>
-                                            <span>150г</span>
-                                        </div>
-                                        <div class="consist__list-item">
-                                            <img src="images/icons/cucumber.svg" alt="cucumber">
-                                            <span>Овощи</span>
-                                            <span>200г</span>
-                                        </div>
-                                        <div class="consist__list-item">
-                                            <img src="images/icons/cheese.svg" alt="cheese">
-                                            <span>Сыр</span>
-                                            <span>80г</span>
-                                        </div>
-                                    </div>
-                                </button>
-
-                                <button class="btn btn__transparent" disabled>
-                                    <img src="images/icons/kkal.svg" alt="kkal">
-                                    <span class="count">1200</span>
-                                    <span>ккал</span>
-                                </button>
-                            </div>
-
-                            <img class="burger_img" src="images/burgers-slider/Chiken burger.png" alt="dark-beef-burger">
-
-                        </div>
-                        <div class="slider__item-body">
-                            <h1 class="section__title burger__title">Dark Beef Burger</h1>
-                            <p class="slider-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor perferendis eum fugiat ducimus sunt sint culpa laboriosam aliquid doloribus. Similique, voluptatem natus! Nostrum eum, quasi quia dicta aut optio accusamus!</p>
-
-                            <div class="slider__item-block">
-                                <span class="warning">500</span>
-                                <span class="warning">рублей</span>
-                                <a href="#order" class="btn btn__warning">
-                                    заказать
-                                </a>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="list__item-burger">
-                        <div class="slider__item-header">
-                            <div class="burger-btns">
-                                <button class="btn btn__warning consist__btn">
-                                    <img src="images/icons/burger.svg" alt="burger">
-                                    <span>Состав</span>
-                                    <div class="consist">
-                                        <div class="consist__list-item">
-                                            <img src="images/icons/beef.svg" alt="beef">
-                                            <span class="consist-name">Говядина</span>
-                                            <span>300г</span>
-                                        </div>
-                                        <div class="consist__list-item">
-                                            <img src="images/icons/buns.svg" alt="buns">
-                                            <span>Булочки</span>
-                                            <span>100г</span>
-                                        </div>
-                                        <div class="consist__list-item">
-                                            <img src="images/icons/salad.svg" alt="salad">
-                                            <span>Зелень</span>
-                                            <span>70г</span>
-                                        </div>
-                                        <div class="consist__list-item">
-                                            <img src="images/icons/sauce.svg" alt="sauce">
-                                            <span>Соус</span>
-                                            <span>150г</span>
-                                        </div>
-                                        <div class="consist__list-item">
-                                            <img src="images/icons/cucumber.svg" alt="cucumber">
-                                            <span>Овощи</span>
-                                            <span>200г</span>
-                                        </div>
-                                        <div class="consist__list-item">
-                                            <img src="images/icons/cheese.svg" alt="cheese">
-                                            <span>Сыр</span>
-                                            <span>80г</span>
-                                        </div>
-                                    </div>
-                                </button>
-
-                                <button class="btn btn__transparent" disabled>
-                                    <img src="images/icons/kkal.svg" alt="kkal">
-                                    <span class="count">1200</span>
-                                    <span>ккал</span>
-                                </button>
-                            </div>
-
-                            <img class="burger_img" src="images/burgers-slider/NYC-Diner-Bacon-Cheeseburger.png" alt="dark-beef-burger">
-
-                        </div>
-                        <div class="slider__item-body">
-                            <h1 class="section__title burger__title">Dark Beef Burger</h1>
-                            <p class="slider-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor perferendis eum fugiat ducimus sunt sint culpa laboriosam aliquid doloribus. Similique, voluptatem natus! Nostrum eum, quasi quia dicta aut optio accusamus!</p>
-
-                            <div class="slider__item-block">
-                                <span class="warning">500</span>
-                                <span class="warning">рублей</span>
-                                <a href="#order" class="btn btn__warning">
-                                    заказать
-                                </a>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="list__item-burger">
-                        <div class="slider__item-header">
-                            <div class="burger-btns">
-                                <button class="btn btn__warning consist__btn">
-                                    <img src="images/icons/burger.svg" alt="burger">
-                                    <span>Состав</span>
-                                    <div class="consist">
-                                        <div class="consist__list-item">
-                                            <img src="images/icons/beef.svg" alt="beef">
-                                            <span class="consist-name">Говядина</span>
-                                            <span>300г</span>
-                                        </div>
-                                        <div class="consist__list-item">
-                                            <img src="images/icons/buns.svg" alt="buns">
-                                            <span>Булочки</span>
-                                            <span>100г</span>
-                                        </div>
-                                        <div class="consist__list-item">
-                                            <img src="images/icons/salad.svg" alt="salad">
-                                            <span>Зелень</span>
-                                            <span>70г</span>
-                                        </div>
-                                        <div class="consist__list-item">
-                                            <img src="images/icons/sauce.svg" alt="sauce">
-                                            <span>Соус</span>
-                                            <span>150г</span>
-                                        </div>
-                                        <div class="consist__list-item">
-                                            <img src="images/icons/cucumber.svg" alt="cucumber">
-                                            <span>Овощи</span>
-                                            <span>200г</span>
-                                        </div>
-                                        <div class="consist__list-item">
-                                            <img src="images/icons/cheese.svg" alt="cheese">
-                                            <span>Сыр</span>
-                                            <span>80г</span>
-                                        </div>
-                                    </div>
-                                </button>
-
-                                <button class="btn btn__transparent" disabled>
-                                    <img src="images/icons/kkal.svg" alt="kkal">
-                                    <span class="count">1200</span>
-                                    <span>ккал</span>
-                                </button>
-                            </div>
-
-                            <img class="burger_img" src="images/burgers-slider/Spicy_Shrimp_Burger.png" alt="dark-beef-burger">
-
-                        </div>
-                        <div class="slider__item-body">
-                            <h1 class="section__title burger__title">Dark Beef Burger</h1>
-                            <p class="slider-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor perferendis eum fugiat ducimus sunt sint culpa laboriosam aliquid doloribus. Similique, voluptatem natus! Nostrum eum, quasi quia dicta aut optio accusamus!</p>
-
-                            <div class="slider__item-block">
-                                <span class="warning">500</span>
-                                <span class="warning">рублей</span>
-                                <a href="#order" class="btn btn__warning">
-                                    заказать
-                                </a>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-
-            <button class="btn btn__transparent btn__arrow-right slider">
-                <img src="images/icons/arrow-scroll.svg" 
-                alt="arrow-scroll-right" 
-                class="arrow-scroll-right">
-            </button>
-        </section>
-
-        <section class="section section__team" id="team">
-            <div class="container team__container">
-                <h1 class="section__title">команда</h1>
-
-                <div class="card__name">
-                    <button class="btn btn__transparent accordion">
-                        <div class= "triangle"></div>
-                        <h4>Дэенил Редклиф</h4>
-                    </button>
-                    <div class="card__name-about">
-                        <img src="images/icons/aphex.png" alt="man" class="round">
-                        <div class="card__name-text">
-                            <h5>Оператор</h5>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita, blanditiis?</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card__name">
-                    <button class="btn btn__transparent accordion">
-                        <div class= "triangle"></div>
-                        <h4>Дэенил Редклиф</h4>
-                    </button>
-                    <div class="card__name-about">
-                        <img src="images/icons/aphex.png" alt="man" class="round">
-                        <div class="card__name-text">
-                            <h5>Оператор</h5>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita, blanditiis?</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card__name">
-                    <button class="btn btn__transparent accordion">
-                        <div class= "triangle"></div>
-                        <h4>Дэенил Редклиф</h4>
-                    </button>
-                    <div class="card__name-about">
-                        <img src="images/icons/aphex.png" alt="man" class="round">
-                        <div class="card__name-text">
-                            <h5>Оператор</h5>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita, blanditiis?</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card__name">
-                    <button class="btn btn__transparent accordion">
-                        <div class= "triangle"></div>
-                        <h4>Дэенил Редклиф</h4>
-                    </button>
-                    <div class="card__name-about">
-                        <img src="images/icons/aphex.png" alt="man" class="round">
-                        <div class="card__name-text">
-                            <h5>Оператор</h5>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita, blanditiis?</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section section__feedback" id="feedback">
-            <div class="feedback-card">
-                <div class="feedback-card__content">
-                    <h5 class="section__title">константин спилберг</h5>
-                    <p class="feedback__text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
-                    <button class="btn btn__secondary">подробнее</button>
-                    <button class="btn btn__mobile_vers">читать отзыв</button>
-                </div>
-                <img src="images/feedback/feedback1.png" alt="" class="feedback-card__background">
-            </div>
-            <div class="feedback-card">
-                <div class="feedback-card__content">
-                    <h5 class="section__title">константин спилберг</h5>
-                    <p class="feedback__text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
-                    <button class="btn btn__secondary">подробнее</button>
-                    <button class="btn btn__mobile_vers">читать отзыв</button>
-                </div>
-                <img src="images/feedback/feedback2.png" alt="" class="feedback-card__background">
-            </div>
-            <div class="feedback-card">
-                <div class="feedback-card__content">
-                    <h5 class="section__title">константин спилберг</h5>
-                    <p class="feedback__text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
-                    <button class="btn btn__secondary">подробнее</button>
-                    <button class="btn btn__mobile_vers">читать отзыв</button>
-                </div>
-                <img src="images/feedback/feedback3.png" alt="" class="feedback-card__background">
-            </div>
-            <div class="feedback-card">
-                <div class="feedback-card__content">
-                    <h5 class="section__title">константин спилберг</h5>
-                    <p class="feedback__text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
-                    <button class="btn btn__secondary">подробнее</button>
-                    <button class="btn btn__mobile_vers">читать отзыв</button>
-                </div>
-                <img src="images/feedback/feedback4.png" alt="" class="feedback-card__background">
-            </div>
-            <div class="feedback-card">
-                <div class="feedback-card__content">
-                    <h5 class="section__title">константин спилберг</h5>
-                    <p class="feedback__text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
-                    <button class="btn btn__secondary">подробнее</button>
-                    <button class="btn btn__mobile_vers">читать отзыв</button>
-                </div>
-                <img src="images/feedback/feedback5.png" alt="" class="feedback-card__background">
-            </div>
-            <div class="feedback-card">
-                <div class="feedback-card__content">
-                    <h5 class="section__title">константин спилберг</h5>
-                    <p class="feedback__text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
-                    <button class="btn btn__secondary">подробнее</button>
-                    <button class="btn btn__mobile_vers">читать отзыв</button>
-                </div>
-                <img src="images/feedback/feedback6.png" alt="" class="feedback-card__background">
-            </div>
-            <div class="feedback-card">
-                <div class="feedback-card__content">
-                    <h5 class="section__title">константин спилберг</h5>
-                    <p class="feedback__text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
-                    <button class="btn btn__secondary">подробнее</button>
-                    <button class="btn btn__mobile_vers">читать отзыв</button>
-                </div>
-                <img src="images/feedback/feedback7.png" alt="" class="feedback-card__background">
-            </div>
-            <div class="feedback-card">
-                <div class="feedback-card__content">
-                    <h5 class="section__title">константин спилберг</h5>
-                    <p class="feedback__text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
-                    <button class="btn btn__secondary">подробнее</button>
-                    <button class="btn btn__mobile_vers">читать отзыв</button>
-                </div>
-                <img src="images/feedback/feedback8.png" alt="" class="feedback-card__background">
-            </div>
-        </section>
-
-        <section class="section section__order" id="order">
-            <div class="container container__order">
-                <h1 class="section__title">закажите доставку</h1>
-
-                <form action="#" class="order__form">
-                    <div class="order__form-address">
-                        <div class="form__row">
-                            <div class="input__wrapper wrapper">
-                                <label for="name">имя</label>
-                                <input type="text" id="name" name="name" class="input" required>
-                                <div class="error"></div>
-                            </div>
-                            <div class="input__wrapper wrapper">
-                                <label for="phone">телефон</label>
-                                <input type="text" id="phone" name="phone" class="input" required>
-                                <div class="error"></div>
-                            </div>
-                        </div>
-                        <div class="form__row">
-                            <div class="input__wrapper wrapper">
-                                <label for="street">улица</label>
-                                <input type="text" id="street" name="street" class="input">
-                            </div>
-                        </div>
-                        <div class="form__row">
-                            <div class="input__wrapper wrapper">
-                                <label for="house">дом</label>
-                                <input type="text" id="house" name="house" class="input">
-                            </div>
-                            <div class="input__wrapper wrapper">
-                                <label for="entrance">корпус</label>
-                                <input type="text" id="entrance" name="entrance" class="input">
-                            </div>
-                            <div class="input__wrapper wrapper">
-                                <label for="flat">квартира</label>
-                                <input type="text" id="flat" name="flat" class="input">
-                            </div>
-                            <div class="input__wrapper wrapper">
-                                <label for="level">этаж</label>
-                                <input type="text" id="level" name="level" class="input">
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="order__form-comment">
-                        <div class="form__row">
-                            <div class="input__wrapper wrapper">
-                                <label for="comment">комментарий</label>
-                                <textarea id="comment" class="input" name="comment" required></textarea>
-                                <div class="error"></div>
-                            </div>
-                        </div>
-
-                        <div class="form__row__buttons">
-                            <div class="input__wrapper--radio">
-                                <label class="textformat" for="need">Нужна сдача</label>
-                                <input class="buttom__format" type="radio" id="need" name="payment">
-                            </div>
-
-                            <div class="input__wrapper--radio">
-                                <label class="textformat" for="notNeed">По карте</label>
-                                <input class="buttom__format" type="radio" id="notNeed" name="payment">
-                            </div>
-                        </div>
-
-                        <div class="form__row__buttons">
-                            <div class="input__wrapper--checkbox">
-                                <label class="textformat" for="recall">Не звоните мне</label>
-                                <input class="buttom__format" type="checkbox" id="recall" name="recall">
-                            </div>
-                        </div>
-
-                        <div class="form__row">
-                            <button class="btn order__btn btn__warning">
-                                заказать
-                            </button>
-
-                            <button class="btn btn__transparent" type="reset">очистить</button>
-                        </div>
-                    </div>
-                    <div class="response__order">
-                        <div class="response__window">
-                            <div class="response__text">
-                                <span class="response-answer"></span>
-                            </div>
-                            <button class="btn btn__warning response_btn" type="button">Закрыть</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </section>
-        
-        <section class="section section__contacts" id="contacts">
-        </section>
-    </main>
-
-    <footer class="footer">
-        <div class="container footer__container">
-            <ul class="footer__list">
-                <li class="footer__item">
-                    <span>Санкт-Петербург, ул.Бабушкина, д.12/1, 15</span>
-                </li>
-
-                <li class="footer__item">
-                    <img src="images/icons/phone.svg" alt="" class="phone__img">
-                    <a href='tel:79957809650' class="orange">+7 (995) 780-96-50</a>
-                </li>
-            </ul>
-
-            <ul class="footer__list">
-                <li class="footer__item">
-                    <a href="#">
-                        <img class="footer__img" src="images/icons/vk.svg" alt="vk">
-                    </a>
-                </li>
-
-                <li class="footer__item">
-                    <a href="#">
-                        <img class="footer__img" src="images/icons/fb.svg" alt="fb">
-                    </a>
-                </li>
-
-                <li class="footer__item">
-                    <a href="#">
-                        <img class="footer__img" src="images/icons/inst.svg" alt="inst">
-                    </a>
-                </li>
-
-                <li class="footer__item">
-                    <a href="#">
-                        <img class="footer__img" src="images/icons/twitter.svg" alt="tw">
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </footer>
     <script src='script/index.js' type='module'></script>
 </body>
 </html>

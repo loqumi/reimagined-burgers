@@ -4,9 +4,15 @@
 
 .sidebar{
     position: fixed;
-    top: 40vh;
+    top: 40%;
     right: 3vw;
     z-index: 1;
+}
+
+.dot_item a {
+    text-align: center;
+    font-size: 15px;
+    color: transparent;
 }
 
 .dot_list{
@@ -15,7 +21,9 @@
     vertical-align: 100%;
 }
 
-.dot_item{
+.dot_item {
+    cursor: pointer;
+    transition: 1.3s;
     height: 8px;
     width: 8px;
     padding: 0.40rem;
@@ -24,6 +32,6 @@
     margin: 0.6rem;
 }
 
-.dot_item:hover{
-box-shadow: 0 0 0 1px inset var(--white);
+.dot_item.active {
+    box-shadow: 0 0 0 1px inset var(--white);
 }
